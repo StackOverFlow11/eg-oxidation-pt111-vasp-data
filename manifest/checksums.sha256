@@ -1,6 +1,6 @@
 53a94eb47a3b1deac3ffeacdd3ea3c09480a635c551d612309f87951d01938f1  ./derived/harvest_ladder.csv
 c8cd9f6005c84116069b369fa9ec27b1dbcb16a81c843d34f9f89a03840412f5  ./derived/harvest_ledger.csv
-b5c8ec7098e1fc754516409fa74391b8eb331dc74764367de0e2b964317f070d  ./derived/plot_fig1.py
+f70ca82ff1ed2f3423720a180d9cfbf83a610f625d000ec86fb631b8fe445f09  ./derived/plot_fig1.py
 2c57d62fffbcb1a3249afdb6af2606682ff3af6b8372cee3cdb24a3e0e48993f  ./derived/README.md
 c89217e7e8c66409895e12284df8a3f921f16a46bdd0168e13771b451d1d5a82  ./derived/requirements.txt
 683b5c005e5a4f42c061e2b07e2186c6e9de05c24cfcdc385dfd74429eab4136  ./derived/workflow/conventions.md
