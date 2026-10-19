@@ -3,10 +3,10 @@
 Raw VASP data for the DFT study of ethylene glycol (EG) oxidation on Pt(111).
 The data are organized into two workflows:
 
-| Workflow | Directory | Ensemble | Cluster |
-|---|---|---|---|
-| Configuration screening | `screening/` | constant charge, vacuum, CHE, 450 eV | screening host |
-| Production | `production/` | constant potential, VASPsol++, 0.4 / 0.9 V vs RHE | production host |
+| Workflow | Directory | Ensemble |
+|---|---|---|
+| Configuration screening | `screening/` | constant charge, vacuum, CHE, 450 eV |
+| Production | `production/` | constant potential, VASPsol++, 0.4 / 0.9 V vs RHE |
 
 ## Layout
 
@@ -25,7 +25,7 @@ derived/
   plot_fig1.py           # Figure 1 plotting script
   workflow/              # templates and thermodynamic conventions used for production
 manifest/
-  jobs.csv               # one row per directory, including archived=false rows
+  jobs.csv               # one row per archived directory
   potcar.csv             # POTCAR metadata: element order, TITEL/VRHFIN, SHA-256
   checksums.sha256       # SHA-256 of every archived file
 fetch/
@@ -34,39 +34,31 @@ fetch/
 ```
 
 The original directory names are preserved except for two Windows/URL-safe
-replacements: `*` → `_` and `+` → `p`. The original relative path of every row
-is recorded in `manifest/jobs.csv` (`orig_relpath`) and points to the source
-directory on the corresponding cluster.
+replacements: `*` → `_` and `+` → `p`.
 
 ## Status values in `manifest/jobs.csv`
 
-| Status | Meaning | Files archived? |
-|---|---|---|
-| `prod_final` | valid production state (pre_opt / fine_opt / frq) | yes |
-| `screen_selected` | screening candidate selected for the production workflow | yes |
-| `screen_candidate` | alternative candidate evaluated during screening | yes |
-| `screen_failed` | failed / superseded constant-potential control | no (manifest only) |
-| `superseded_freq` | old CHE frequency directories; not used by the final manuscript | no (manifest only) |
-| `excluded_scope` | early exploration (`path1`, `path2`), templates, CI-NEB images | no (manifest only) |
+| Status | Meaning |
+|---|---|
+| `prod_final` | production state (pre_opt / fine_opt / frq) |
+| `screen_selected` | screening candidate selected for the production workflow |
+| `screen_candidate` | alternative candidate evaluated during screening |
 
-Current counts: 74 production directories covering 25 valid states (20 adsorbate
-states, 3 gas molecules, 2 slab references) and `*OOH` at both potentials;
-87 archived screening `opt` directories (15 selected, 72 candidates); and 150
-manifest-only rows.
+Current counts: 74 production directories covering 20 adsorbate states at
+0.4 / 0.9 V, 3 gas molecules, 2 slab references, and `*OOH` at both potentials;
+87 screening `opt` directories (15 selected, 72 candidates).
 
 ## File selection
 
-Every archived `opt` / `pre_opt` / `fine_opt` directory contains:
+A complete archived `opt` / `pre_opt` / `fine_opt` directory contains:
 
 - `INCAR`, `KPOINTS`, `POSCAR`, `CONTCAR`, `OSZICAR`
-- `script.sh`, `time`, `cal.out`
 - `OUTCAR.gz` — full OUTCAR, gzip -9, not trimmed
 - `vasprun.xml.gz`
-- `stdout.gz` and/or `output.o.gz` (scheduler logs, when present)
 - `POTCAR.sha256` — SHA-256 of the original POTCAR
 
-Each `frq` directory additionally contains `DYNMAT` (the finite-displacement
-Hessian used by the thermal-correction script).
+A complete `frq` directory additionally contains `DYNMAT` (the
+finite-displacement Hessian used by the thermal-correction script).
 
 ## POTCAR
 
@@ -90,14 +82,9 @@ verifies it against `POTCAR.sha256`.
 
 ## VASP versions
 
-- **Production (`production host`)**: self-compiled VASP 5.4.4 with the VASPsol++
-  patch (`ISOL=2`, nonlinear/nonlocal cavity, grand-canonical Fermi-level
-  pinning). Binary:
-  ``; module
-  `Intel 2018`. This binary does **not** include VTST.
-- **Screening (`screening host`)**: VASP 5.4.4, constant-charge CHE calculations;
-  see `GC_CHE/audit/chem_hpc_vasp_baseline.md` in the manuscript repository for
-  the full environment baseline. Module `intel`, binary `vasp_std`.
+- **Production**: VASP 5.4.4 with the VASPsol++ patch (`ISOL=2`,
+  nonlinear/nonlocal cavity, grand-canonical Fermi-level pinning).
+- **Screening**: VASP 5.4.4, constant-charge CHE calculations.
 
 ## Thermodynamic conventions
 
@@ -113,7 +100,6 @@ The production free energies use the GC-CHE conventions frozen in
 - `T = 300.15 K`; gas-phase pressures: EG and H₂ 1 bar, H₂O 0.035 bar.
 - Frequencies are neutral, solvent-free, fixed-charge calculations used only
   for the thermal correction; the energetics are constant-potential.
-
 
 ## Verification
 

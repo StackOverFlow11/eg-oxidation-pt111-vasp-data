@@ -1,3 +1,10 @@
+# local calculation scaffolding, not part of the archive
+script.sh
+time
+cal.out
+stdout.gz
+output.o.gz
+
 POTCAR
 WAVECAR
 CHGCAR

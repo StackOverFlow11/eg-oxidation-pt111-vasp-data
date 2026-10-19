@@ -12,10 +12,9 @@ workspace at the time of archiving:
 | `workflow/conventions.md` | Frozen thermodynamic conventions (CHE, Ω, G_corr, G(O₂), pressures) |
 | `workflow/rules.md` | Hard rules for constant-potential VASPsol++ runs and the acceptance checks |
 
-The authoritative source of these files is the manuscript workspace
-`GC_CHE/harvest`, `GC_CHE/analysis`, and `GC_CHE/workflow`. They are included
-here so that the raw data can be traced to the reported ledger and figure
-without a second repository.
+These files are copied from the manuscript analysis workspace. They are
+included here so that the raw data can be traced to the reported ledger and
+figure without a second repository.
 
 `harvest_ledger.csv` uses Ω (the pinned VASP `E0`) directly; do not add a
 manual `±Δn·μ_e` correction. See `workflow/conventions.md`.

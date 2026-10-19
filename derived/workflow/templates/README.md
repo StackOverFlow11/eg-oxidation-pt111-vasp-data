@@ -1,6 +1,6 @@
 # GC-CHE 计算模板矩阵（3 档 × 3 体系类型）
 
-生成日期：2026-10-12。canonical 源：本目录（repo）；部署到 production host ``（含 script.sh）。
+生成日期：2026-10-12。canonical 源：本目录（repo）。运行脚本与目标集群的调度器、编译环境相关，按部署环境单独维护，不随本归档分发。
 
 ## 档位（沿流程从左到右）
 
@@ -26,10 +26,10 @@
 4. **Ω 直接取 E0**：恒电势输出已含 −q_sol·μe，严禁再手工 ±Δn·μe。
 5. 验收每个钉扎 job：`grep -c "Adjusting number of electrons" OUTCAR` ≥1 且 |E-fermi − ref| < 0.01 eV 且 q_sol≠0。
 6. freq 降本走**偏 Hessian**（只算吸附物+近邻表层，Chen 2020 先例），不是降 K 点（无文献支持）。
-7. 脚本不跨集群复用：group 用 `` 模板 script.sh（ppn=24, Intel 2018）。
+7. 运行脚本不跨集群复用：不同集群按各自的调度器与编译环境单独维护。
 
 ## 待办
 
-- [x] 偏 Hessian 固定原子流程：`../src/scripts/fix_atoms.py`（即 `GC_CHE/workflow/src/scripts/`；`--mode bottom2` 固定底部两层 / `--mode slab_all` 固定全部 Pt），本地与 group md_env 输出逐位一致 ✓（group 部署于 ``）
+- [x] 偏 Hessian 固定原子流程：`../src/scripts/fix_atoms.py`（即 `GC_CHE/workflow/src/scripts/`；`--mode bottom2` 固定底部两层 / `--mode slab_all` 固定全部 Pt），本地与集群环境输出逐位一致 ✓
 - [ ] frq 的恒电势 IBRION=5 尚无应用先例，首批生产前小体系验证（成功即 SI 亮点）
 - [ ] c 轴 26.8 Å 真空抽检（Chen 2020 经验 >50 Å；旧数据无饱和警告）

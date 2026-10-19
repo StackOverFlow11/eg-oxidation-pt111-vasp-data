@@ -1,312 +1,162 @@
-job_id,flow,family,species,potential,stage,status,archived,cluster,source_path,orig_relpath,E0_eV,Omega_eV,q_sol,Gcorr_eV,n_files,vasp_version,vasp_binary,compiler_module,submit_date
-production/H2/neutral/fine_opt,production,gc_che,H2,neutral,fine_opt,prod_final,true,production host,,H2/neutral/fine_opt,-6.77273299,-6.77273299,,-0.048013,13,5.4.4,,Intel 2018,
-production/H2/neutral/frq,production,gc_che,H2,neutral,frq,prod_final,true,production host,,H2/neutral/frq,,,,-0.048013,14,5.4.4,,Intel 2018,
-production/H2O/neutral/fine_opt,production,gc_che,H2O,neutral,fine_opt,prod_final,true,production host,,H2O/neutral/fine_opt,-14.22725966,-14.22725966,,-0.003787,13,5.4.4,,Intel 2018,
-production/H2O/neutral/frq,production,gc_che,H2O,neutral,frq,prod_final,true,production host,,H2O/neutral/frq,,,,-0.003787,14,5.4.4,,Intel 2018,
-production/HOCH2CH2OH/neutral/fine_opt,production,gc_che,HOCH2CH2OH,neutral,fine_opt,prod_final,true,production host,,HOCH2CH2OH/neutral/fine_opt,-53.31351958,-53.31351958,,1.48995,13,5.4.4,,Intel 2018,
-production/HOCH2CH2OH/neutral/frq,production,gc_che,HOCH2CH2OH,neutral,frq,prod_final,true,production host,,HOCH2CH2OH/neutral/frq,,,,1.48995,14,5.4.4,,Intel 2018,
-production/_H/0.4V/fine_opt,production,gc_che,_H,0.4V,fine_opt,prod_final,true,production host,,_H/0.4V/fine_opt,-311.16542714,-311.16542714,1.39799504,0.145205,13,5.4.4,,Intel 2018,
-production/_H/0.4V/frq,production,gc_che,_H,0.4V,frq,prod_final,true,production host,,_H/0.4V/frq,,,,0.145205,14,5.4.4,,Intel 2018,
-production/_H/0.4V/pre_opt,production,gc_che,_H,0.4V,pre_opt,prod_final,true,production host,,_H/0.4V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/_H/0.9V/fine_opt,production,gc_che,_H,0.9V,fine_opt,prod_final,true,production host,,_H/0.9V/fine_opt,-310.56888075,-310.56888075,0.96641637,0.145282,13,5.4.4,,Intel 2018,
-production/_H/0.9V/frq,production,gc_che,_H,0.9V,frq,prod_final,true,production host,,_H/0.9V/frq,,,,0.145282,14,5.4.4,,Intel 2018,
-production/_H/0.9V/pre_opt,production,gc_che,_H,0.9V,pre_opt,prod_final,true,production host,,_H/0.9V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/_O/0.4V/fine_opt,production,gc_che,_O,0.4V,fine_opt,prod_final,true,production host,,_O/0.4V/fine_opt,-313.44779999,-313.44779999,1.42089007,0.050478,13,5.4.4,,Intel 2018,
-production/_O/0.4V/frq,production,gc_che,_O,0.4V,frq,prod_final,true,production host,,_O/0.4V/frq,,,,0.050478,14,5.4.4,,Intel 2018,
-production/_O/0.4V/pre_opt,production,gc_che,_O,0.4V,pre_opt,prod_final,true,production host,,_O/0.4V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/_O/0.9V/fine_opt,production,gc_che,_O,0.9V,fine_opt,prod_final,true,production host,,_O/0.9V/fine_opt,-312.83920633,-312.83920633,0.99656329,0.053175,13,5.4.4,,Intel 2018,
-production/_O/0.9V/frq,production,gc_che,_O,0.9V,frq,prod_final,true,production host,,_O/0.9V/frq,,,,0.053175,14,5.4.4,,Intel 2018,
-production/_O/0.9V/pre_opt,production,gc_che,_O,0.9V,pre_opt,prod_final,true,production host,,_O/0.9V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/_OH/0.4V/fine_opt,production,gc_che,_OH,0.4V,fine_opt,prod_final,true,production host,,_OH/0.4V/fine_opt,-317.45155734,-317.45155734,1.43198109,0.295731,13,5.4.4,,Intel 2018,
-production/_OH/0.4V/frq,production,gc_che,_OH,0.4V,frq,prod_final,true,production host,,_OH/0.4V/frq,,,,0.295731,14,5.4.4,,Intel 2018,
-production/_OH/0.4V/pre_opt,production,gc_che,_OH,0.4V,pre_opt,prod_final,true,production host,,_OH/0.4V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/_OH/0.9V/fine_opt,production,gc_che,_OH,0.9V,fine_opt,prod_final,true,production host,,_OH/0.9V/fine_opt,-316.83738873,-316.83738873,1.00238511,0.300299,13,5.4.4,,Intel 2018,
-production/_OH/0.9V/frq,production,gc_che,_OH,0.9V,frq,prod_final,true,production host,,_OH/0.9V/frq,,,,0.300299,14,5.4.4,,Intel 2018,
-production/_OH/0.9V/pre_opt,production,gc_che,_OH,0.9V,pre_opt,prod_final,true,production host,,_OH/0.9V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/_OOH/0.4V/fine_opt,production,gc_che,_OOH,0.4V,fine_opt,prod_final,true,production host,,_OOH/0.4V/fine_opt,,,,,5,5.4.4,,Intel 2018,
-production/_OOH/0.4V/frq,production,gc_che,_OOH,0.4V,frq,prod_final,true,production host,,_OOH/0.4V/frq,,,,,5,5.4.4,,Intel 2018,
-production/_OOH/0.4V/pre_opt,production,gc_che,_OOH,0.4V,pre_opt,prod_final,true,production host,,_OOH/0.4V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/_OOH/0.9V/fine_opt,production,gc_che,_OOH,0.9V,fine_opt,prod_final,true,production host,,_OOH/0.9V/fine_opt,,,,,5,5.4.4,,Intel 2018,
-production/_OOH/0.9V/frq,production,gc_che,_OOH,0.9V,frq,prod_final,true,production host,,_OOH/0.9V/frq,,,,,5,5.4.4,,Intel 2018,
-production/_OOH/0.9V/pre_opt,production,gc_che,_OOH,0.9V,pre_opt,prod_final,true,production host,,_OOH/0.9V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/_ch2ohcoo_p_h/0.4V/fine_opt,production,gc_che,_ch2ohcoo+_h,0.4V,fine_opt,prod_final,true,production host,,_ch2ohcoo+_h/0.4V/fine_opt,-361.18703532,-361.18703532,1.26952454,1.495833,13,5.4.4,,Intel 2018,
-production/_ch2ohcoo_p_h/0.4V/frq,production,gc_che,_ch2ohcoo+_h,0.4V,frq,prod_final,true,production host,,_ch2ohcoo+_h/0.4V/frq,,,,1.495833,14,5.4.4,,Intel 2018,
-production/_ch2ohcoo_p_h/0.4V/pre_opt,production,gc_che,_ch2ohcoo+_h,0.4V,pre_opt,prod_final,true,production host,,_ch2ohcoo+_h/0.4V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/_ch2ohcoo_p_h/0.9V/fine_opt,production,gc_che,_ch2ohcoo+_h,0.9V,fine_opt,prod_final,true,production host,,_ch2ohcoo+_h/0.9V/fine_opt,-360.66089468,-360.66089468,0.80415687,1.567214,13,5.4.4,,Intel 2018,
-production/_ch2ohcoo_p_h/0.9V/frq,production,gc_che,_ch2ohcoo+_h,0.9V,frq,prod_final,true,production host,,_ch2ohcoo+_h/0.9V/frq,,,,1.567214,14,5.4.4,,Intel 2018,
-production/_ch2ohcoo_p_h/0.9V/pre_opt,production,gc_che,_ch2ohcoo+_h,0.9V,pre_opt,prod_final,true,production host,,_ch2ohcoo+_h/0.9V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/_ch2ohcooh/0.4V/fine_opt,production,gc_che,_ch2ohcooh,0.4V,fine_opt,prod_final,true,production host,,_ch2ohcooh/0.4V/fine_opt,-361.07461164,-361.07461164,1.22206886,1.632252,13,5.4.4,,Intel 2018,
-production/_ch2ohcooh/0.4V/frq,production,gc_che,_ch2ohcooh,0.4V,frq,prod_final,true,production host,,_ch2ohcooh/0.4V/frq,,,,1.632252,14,5.4.4,,Intel 2018,
-production/_ch2ohcooh/0.4V/pre_opt,production,gc_che,_ch2ohcooh,0.4V,pre_opt,prod_final,true,production host,,_ch2ohcooh/0.4V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/_ch2ohcooh/0.9V/fine_opt,production,gc_che,_ch2ohcooh,0.9V,fine_opt,prod_final,true,production host,,_ch2ohcooh/0.9V/fine_opt,-360.56050163,-360.56050163,0.81980123,1.625788,13,5.4.4,,Intel 2018,
-production/_ch2ohcooh/0.9V/frq,production,gc_che,_ch2ohcooh,0.9V,frq,prod_final,true,production host,,_ch2ohcooh/0.9V/frq,,,,1.625788,14,5.4.4,,Intel 2018,
-production/_ch2ohcooh/0.9V/pre_opt,production,gc_che,_ch2ohcooh,0.9V,pre_opt,prod_final,true,production host,,_ch2ohcooh/0.9V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/ch2oh_choh/0.4V/fine_opt,production,gc_che,ch2oh_choh,0.4V,fine_opt,prod_final,true,production host,,ch2oh_choh/0.4V/fine_opt,-357.84255855,-357.84255855,1.25392631,1.80052,13,5.4.4,,Intel 2018,
-production/ch2oh_choh/0.4V/frq,production,gc_che,ch2oh_choh,0.4V,frq,prod_final,true,production host,,ch2oh_choh/0.4V/frq,,,,1.80052,14,5.4.4,,Intel 2018,
-production/ch2oh_choh/0.4V/pre_opt,production,gc_che,ch2oh_choh,0.4V,pre_opt,prod_final,true,production host,,ch2oh_choh/0.4V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/ch2oh_choh/0.9V/fine_opt,production,gc_che,ch2oh_choh,0.9V,fine_opt,prod_final,true,production host,,ch2oh_choh/0.9V/fine_opt,-357.32617453,-357.32617453,0.80617594,1.805261,13,5.4.4,,Intel 2018,
-production/ch2oh_choh/0.9V/frq,production,gc_che,ch2oh_choh,0.9V,frq,prod_final,true,production host,,ch2oh_choh/0.9V/frq,,,,1.805261,14,5.4.4,,Intel 2018,
-production/ch2oh_choh/0.9V/pre_opt,production,gc_che,ch2oh_choh,0.9V,pre_opt,prod_final,true,production host,,ch2oh_choh/0.9V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/ch2oh_co/0.4V/fine_opt,production,gc_che,ch2oh_co,0.4V,fine_opt,prod_final,true,production host,,ch2oh_co/0.4V/fine_opt,-350.61455793,-350.61455793,1.2886473,1.244317,13,5.4.4,,Intel 2018,
-production/ch2oh_co/0.4V/frq,production,gc_che,ch2oh_co,0.4V,frq,prod_final,true,production host,,ch2oh_co/0.4V/frq,,,,1.244317,14,5.4.4,,Intel 2018,
-production/ch2oh_co/0.4V/pre_opt,production,gc_che,ch2oh_co,0.4V,pre_opt,prod_final,true,production host,,ch2oh_co/0.4V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/ch2oh_co/0.9V/fine_opt,production,gc_che,ch2oh_co,0.9V,fine_opt,prod_final,true,production host,,ch2oh_co/0.9V/fine_opt,-350.07357427,-350.07357427,0.86814714,1.262984,13,5.4.4,,Intel 2018,
-production/ch2oh_co/0.9V/frq,production,gc_che,ch2oh_co,0.9V,frq,prod_final,true,production host,,ch2oh_co/0.9V/frq,,,,1.262984,14,5.4.4,,Intel 2018,
-production/ch2oh_co/0.9V/pre_opt,production,gc_che,ch2oh_co,0.9V,pre_opt,prod_final,true,production host,,ch2oh_co/0.9V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/ch2oh_coh/0.4V/fine_opt,production,gc_che,ch2oh_coh,0.4V,fine_opt,prod_final,true,production host,,ch2oh_coh/0.4V/fine_opt,-354.13100244,-354.13100244,1.11584396,1.498893,13,5.4.4,,Intel 2018,
-production/ch2oh_coh/0.4V/frq,production,gc_che,ch2oh_coh,0.4V,frq,prod_final,true,production host,,ch2oh_coh/0.4V/frq,,,,1.498893,14,5.4.4,,Intel 2018,
-production/ch2oh_coh/0.4V/pre_opt,production,gc_che,ch2oh_coh,0.4V,pre_opt,prod_final,true,production host,,ch2oh_coh/0.4V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/ch2oh_coh/0.9V/fine_opt,production,gc_che,ch2oh_coh,0.9V,fine_opt,prod_final,true,production host,,ch2oh_coh/0.9V/fine_opt,-353.66942354,-353.66942354,0.68202923,1.542157,13,5.4.4,,Intel 2018,
-production/ch2oh_coh/0.9V/frq,production,gc_che,ch2oh_coh,0.9V,frq,prod_final,true,production host,,ch2oh_coh/0.9V/frq,,,,1.542157,14,5.4.4,,Intel 2018,
-production/ch2oh_coh/0.9V/pre_opt,production,gc_che,ch2oh_coh,0.9V,pre_opt,prod_final,true,production host,,ch2oh_coh/0.9V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/ch2ohco_o_/0.4V/fine_opt,production,gc_che,ch2ohco_o_,0.4V,fine_opt,prod_final,true,production host,,ch2ohco_o_/0.4V/fine_opt,-357.35388637,-357.35388637,1.28728778,1.309335,13,5.4.4,,Intel 2018,
-production/ch2ohco_o_/0.4V/frq,production,gc_che,ch2ohco_o_,0.4V,frq,prod_final,true,production host,,ch2ohco_o_/0.4V/frq,,,,1.309335,14,5.4.4,,Intel 2018,
-production/ch2ohco_o_/0.4V/pre_opt,production,gc_che,ch2ohco_o_,0.4V,pre_opt,prod_final,true,production host,,ch2ohco_o_/0.4V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/ch2ohco_o_/0.9V/fine_opt,production,gc_che,ch2ohco_o_,0.9V,fine_opt,prod_final,true,production host,,ch2ohco_o_/0.9V/fine_opt,-356.81557379,-356.81557379,0.83785497,1.346626,13,5.4.4,,Intel 2018,
-production/ch2ohco_o_/0.9V/frq,production,gc_che,ch2ohco_o_,0.9V,frq,prod_final,true,production host,,ch2ohco_o_/0.9V/frq,,,,1.346626,14,5.4.4,,Intel 2018,
-production/ch2ohco_o_/0.9V/pre_opt,production,gc_che,ch2ohco_o_,0.9V,pre_opt,prod_final,true,production host,,ch2ohco_o_/0.9V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/ch2ohcooh/0.4V/fine_opt,production,gc_che,ch2ohcooh,0.4V,fine_opt,prod_final,true,production host,,ch2ohcooh/0.4V/fine_opt,-361.04919304,-361.04919304,1.26236002,1.649407,13,5.4.4,,Intel 2018,
-production/ch2ohcooh/0.4V/frq,production,gc_che,ch2ohcooh,0.4V,frq,prod_final,true,production host,,ch2ohcooh/0.4V/frq,,,,1.649407,14,5.4.4,,Intel 2018,
-production/ch2ohcooh/0.4V/pre_opt,production,gc_che,ch2ohcooh,0.4V,pre_opt,prod_final,true,production host,,ch2ohcooh/0.4V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/ch2ohcooh/0.9V/fine_opt,production,gc_che,ch2ohcooh,0.9V,fine_opt,prod_final,true,production host,,ch2ohcooh/0.9V/fine_opt,-360.50166728,-360.50166728,0.85314533,1.630785,13,5.4.4,,Intel 2018,
-production/ch2ohcooh/0.9V/frq,production,gc_che,ch2ohcooh,0.9V,frq,prod_final,true,production host,,ch2ohcooh/0.9V/frq,,,,1.630785,14,5.4.4,,Intel 2018,
-production/ch2ohcooh/0.9V/pre_opt,production,gc_che,ch2ohcooh,0.9V,pre_opt,prod_final,true,production host,,ch2ohcooh/0.9V/pre_opt,,,,,13,5.4.4,,Intel 2018,
-production/slab/0.4V/fine_opt,production,gc_che,slab,0.4V,fine_opt,prod_final,true,production host,,slab/0.4V/fine_opt,-307.24530422,-307.24530422,1.41789119,0.0,13,5.4.4,,Intel 2018,
-production/slab/0.9V/fine_opt,production,gc_che,slab,0.9V,fine_opt,prod_final,true,production host,,slab/0.9V/fine_opt,-306.63908186,-306.63908186,0.99879037,0.0,13,5.4.4,,Intel 2018,
-screening/che_eg_oxidation/00_molecules/CH2OHCH2OH/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/00_molecules/CH2OHCH2OH/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/00_molecules/CH2OHCH2OH/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/00_molecules/CH2OHCH2OH,neutral,opt,screen_selected,true,screening host,,CHE/EG_Oxidation/00_molecules/CH2OHCH2OH/opt,-53.31825568,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/00_molecules/H2/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/00_molecules/H2/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/00_molecules/H2/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/00_molecules/H2,neutral,opt,screen_selected,true,screening host,,CHE/EG_Oxidation/00_molecules/H2/opt,-6.76910634,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/00_molecules/ch2ohcoo/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/00_molecules/ch2ohcoo/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/00_molecules/ch2ohcoo/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/00_molecules/ch2ohcoo,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/00_molecules/ch2ohcoo/opt,-47.16397981,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/00_molecules/ch2ohcooh/1/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/00_molecules/ch2ohcooh/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/00_molecules/ch2ohcooh/1/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/00_molecules/ch2ohcooh/1,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/00_molecules/ch2ohcooh/1/opt,-52.86237211,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/01_slab/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/01_slab/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/01_slab/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/01_slab,neutral,opt,screen_selected,true,screening host,,CHE/EG_Oxidation/01_slab/opt,-306.29884039,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/02_CH2OHCH2OH/bridge/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/02_CH2OHCH2OH/bridge/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/02_CH2OHCH2OH/bridge/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/02_CH2OHCH2OH/bridge,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/02_CH2OHCH2OH/bridge/opt,-360.53226589,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/02_CH2OHCH2OH/top_1/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/02_CH2OHCH2OH/top_1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/02_CH2OHCH2OH/top_1/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/02_CH2OHCH2OH/top_1,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/02_CH2OHCH2OH/top_1/opt,-360.30948517,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/02_CH2OHCH2OH/top_2/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/02_CH2OHCH2OH/top_2/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/02_CH2OHCH2OH/top_2/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/02_CH2OHCH2OH/top_2,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/02_CH2OHCH2OH/top_2/opt,-360.36813509,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/02_CH2OHCH2OH/top_3/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/02_CH2OHCH2OH/top_3/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/02_CH2OHCH2OH/top_3/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/02_CH2OHCH2OH/top_3,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/02_CH2OHCH2OH/top_3/opt,-360.41835396,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/02_CH2OHCH2OH/top_4/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/02_CH2OHCH2OH/top_4/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/02_CH2OHCH2OH/top_4/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/02_CH2OHCH2OH/top_4,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/02_CH2OHCH2OH/top_4/opt,-360.31972294,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_1_CH2OHCH2O/2bridge/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/03_1_CH2OHCH2O/2bridge/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_1_CH2OHCH2O/2bridge/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_1_CH2OHCH2O/2bridge,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/03_1_CH2OHCH2O/2bridge/opt,-356.30424896,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_1_CH2OHCH2O/bridge/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/03_1_CH2OHCH2O/bridge/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_1_CH2OHCH2O/bridge/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_1_CH2OHCH2O/bridge,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/03_1_CH2OHCH2O/bridge/opt,-355.90136964,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_1_CH2OHCH2O/fcc/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/03_1_CH2OHCH2O/fcc/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_1_CH2OHCH2O/fcc/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_1_CH2OHCH2O/fcc,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/03_1_CH2OHCH2O/fcc/opt,-355.82234036,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_1_CH2OHCH2O/hcp/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/03_1_CH2OHCH2O/hcp/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_1_CH2OHCH2O/hcp/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_1_CH2OHCH2O/hcp,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/03_1_CH2OHCH2O/hcp/opt,-355.81200785,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_1_CH2OHCH2O/top/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/03_1_CH2OHCH2O/top/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_1_CH2OHCH2O/top/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_1_CH2OHCH2O/top,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/03_1_CH2OHCH2O/top/opt,-356.01802384,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_2_CH2OHCHOH/bridge/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/03_2_CH2OHCHOH/bridge/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_2_CH2OHCHOH/bridge/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_2_CH2OHCHOH/bridge,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/03_2_CH2OHCHOH/bridge/opt,-356.84617747,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_2_CH2OHCHOH/fcc/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/03_2_CH2OHCHOH/fcc/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_2_CH2OHCHOH/fcc/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_2_CH2OHCHOH/fcc,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/03_2_CH2OHCHOH/fcc/opt,-356.36041996,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_2_CH2OHCHOH/top/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/03_2_CH2OHCHOH/top/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/03_2_CH2OHCHOH/top/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_2_CH2OHCHOH/top,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/03_2_CH2OHCHOH/top/opt,-356.15144312,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_1_CH2OHCHO/bridge/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/04_1_CH2OHCHO/bridge/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_1_CH2OHCHO/bridge/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_1_CH2OHCHO/bridge,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/04_1_CH2OHCHO/bridge/opt,-352.53317512,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_1_CH2OHCHO/fcc/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/04_1_CH2OHCHO/fcc/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_1_CH2OHCHO/fcc/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_1_CH2OHCHO/fcc,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/04_1_CH2OHCHO/fcc/opt,-352.47819720,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_1_CH2OHCHO/hcp/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/04_1_CH2OHCHO/hcp/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_1_CH2OHCHO/hcp/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_1_CH2OHCHO/hcp,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/04_1_CH2OHCHO/hcp/opt,-352.24749153,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_1_CH2OHCHO/par/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/04_1_CH2OHCHO/par/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_1_CH2OHCHO/par/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_1_CH2OHCHO/par,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/04_1_CH2OHCHO/par/opt,-352.49166874,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_1_CH2OHCHO/par2/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/04_1_CH2OHCHO/par2/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_1_CH2OHCHO/par2/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_1_CH2OHCHO/par2,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/04_1_CH2OHCHO/par2/opt,-352.66768886,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_1_CH2OHCHO/top/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/04_1_CH2OHCHO/top/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_1_CH2OHCHO/top/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_1_CH2OHCHO/top,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/04_1_CH2OHCHO/top/opt,-352.52561475,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_2_CH2OCH2O/1/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/04_2_CH2OCH2O/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_2_CH2OCH2O/1/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_2_CH2OCH2O/1,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/04_2_CH2OCH2O/1/opt,-351.79694989,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_2_CH2OCH2O/2/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/04_2_CH2OCH2O/2/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_2_CH2OCH2O/2/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_2_CH2OCH2O/2,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/04_2_CH2OCH2O/2/opt,-351.83854970,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_2_CH2OCH2O/3/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/04_2_CH2OCH2O/3/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_2_CH2OCH2O/3/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_2_CH2OCH2O/3,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/04_2_CH2OCH2O/3/opt,-351.70096993,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_3_CHOHCHOH/1/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/04_3_CHOHCHOH/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_3_CHOHCHOH/1/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_3_CHOHCHOH/1,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/04_3_CHOHCHOH/1/opt,-353.47273416,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_4_CH2OCHOH/1/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/04_4_CH2OCHOH/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_4_CH2OCHOH/1/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_4_CH2OCHOH/1,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/04_4_CH2OCHOH/1/opt,-352.68698814,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_4_CH2OCHOH/2/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/04_4_CH2OCHOH/2/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/04_4_CH2OCHOH/2/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_4_CH2OCHOH/2,neutral,opt,screen_candidate,true,screening host,,CHE/EG_Oxidation/04_4_CH2OCHOH/2/opt,-352.95292721,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/05_1_CH2OHCOOH/par/freq,screening,che_eg_oxidation,,neutral,freq,superseded_freq,false,screening host,,CHE/EG_Oxidation/05_1_CH2OHCOOH/par/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/05_1_CH2OHCOOH/par/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/05_1_CH2OHCOOH/par,neutral,opt,screen_selected,true,screening host,,CHE/EG_Oxidation/05_1_CH2OHCOOH/par/opt,-359.77090377,,,,12,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path1/ch2ohco/1/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path1/ch2ohco/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path1/ch2ohco/1/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path1/ch2ohco/1/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path1/ch2ohco/2/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path1/ch2ohco/2/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path1/ch2ohco/2/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path1/ch2ohco/2/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path1/ch2ohcoo/1/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path1/ch2ohcoo/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path1/ch2ohcoo/1/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path1/ch2ohcoo/1/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/ch2ohcoh/1/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/ch2ohcoh/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/ch2ohcoh/1/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/ch2ohcoh/1/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chocho/1/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chocho/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chocho/1/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chocho/1/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chocho/2/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chocho/2/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chocho/2/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chocho/2/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/choco/1/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/choco/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/choco/1/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/choco/1/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chocoh/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chocoh/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chocoh/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chocoh/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chocoo/1/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chocoo/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chocoo/1/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chocoo/1/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chocooh/1/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chocooh/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chocooh/1/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chocooh/1/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chohcho/1/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chohcho/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chohcho/1/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chohcho/1/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chohco/1/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chohco/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chohco/1/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chohco/1/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chohcoh/1/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chohcoh/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chohcoh/1/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chohcoh/1/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chohcoo/1/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chohcoo/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chohcoo/1/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chohcoo/1/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chohcooh/1/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chohcooh/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/chohcooh/1/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/chohcooh/1/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/coco/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/coco/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/coco/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/coco/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/cohco/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/cohco/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/cohco/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/cohco/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/cohcoh/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/cohcoh/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/path2/cohcoh/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/path2/cohcoh/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/temp/adsorbate/freq,screening,che_eg_oxidation,,neutral,freq,excluded_scope,false,screening host,,CHE/EG_Oxidation/temp/adsorbate/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_eg_oxidation/temp/adsorbate/opt,screening,che_eg_oxidation,,neutral,opt,excluded_scope,false,screening host,,CHE/EG_Oxidation/temp/adsorbate/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/00_molecules/00_H2O/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/00_molecules/00_H2O/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/00_molecules/00_H2O/opt,screening,che_oer,CHE/OER/00_molecules/00_H2O,neutral,opt,screen_selected,true,screening host,,CHE/OER/00_molecules/00_H2O/opt,-14.22746860,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/00_molecules/01_H2/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/00_molecules/01_H2/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/00_molecules/01_H2/opt,screening,che_oer,CHE/OER/00_molecules/01_H2,neutral,opt,screen_candidate,true,screening host,,CHE/OER/00_molecules/01_H2/opt,-6.76907769,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/02_H2O/bridge/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/02_H2O/bridge/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/02_H2O/bridge/opt,screening,che_oer,CHE/OER/02_H2O/bridge,neutral,opt,screen_candidate,true,screening host,,CHE/OER/02_H2O/bridge/opt,-320.99145920,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/02_H2O/fcc/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/02_H2O/fcc/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/02_H2O/fcc/opt,screening,che_oer,CHE/OER/02_H2O/fcc,neutral,opt,screen_candidate,true,screening host,,CHE/OER/02_H2O/fcc/opt,-320.98745853,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/02_H2O/hcp/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/02_H2O/hcp/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/02_H2O/hcp/opt,screening,che_oer,CHE/OER/02_H2O/hcp,neutral,opt,screen_candidate,true,screening host,,CHE/OER/02_H2O/hcp/opt,-320.99035996,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/02_H2O/top/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/02_H2O/top/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/02_H2O/top/opt,screening,che_oer,CHE/OER/02_H2O/top,neutral,opt,screen_candidate,true,screening host,,CHE/OER/02_H2O/top/opt,-320.98882485,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/03_OH/bridge/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/03_OH/bridge/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/03_OH/bridge/opt,screening,che_oer,CHE/OER/03_OH/bridge,neutral,opt,screen_candidate,true,screening host,,CHE/OER/03_OH/bridge/opt,-316.35604030,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/03_OH/hcp/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/03_OH/hcp/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/03_OH/hcp/opt,screening,che_oer,CHE/OER/03_OH/hcp,neutral,opt,screen_candidate,true,screening host,,CHE/OER/03_OH/hcp/opt,-316.20695795,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/03_OH/top/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/03_OH/top/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/03_OH/top/opt,screening,che_oer,CHE/OER/03_OH/top,neutral,opt,screen_candidate,true,screening host,,CHE/OER/03_OH/top/opt,-316.36613387,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/03_OH/top_2/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/03_OH/top_2/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/03_OH/top_2/opt,screening,che_oer,CHE/OER/03_OH/top_2,neutral,opt,screen_selected,true,screening host,,CHE/OER/03_OH/top_2/opt,-316.36767276,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/04_O/bridge/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/04_O/bridge/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/04_O/bridge/opt,screening,che_oer,CHE/OER/04_O/bridge,neutral,opt,screen_candidate,true,screening host,,CHE/OER/04_O/bridge/opt,-312.47131804,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/04_O/fcc/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/04_O/fcc/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/04_O/fcc/opt,screening,che_oer,CHE/OER/04_O/fcc,neutral,opt,screen_candidate,true,screening host,,CHE/OER/04_O/fcc/opt,-312.06819702,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/04_O/hcp/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/04_O/hcp/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/04_O/hcp/opt,screening,che_oer,CHE/OER/04_O/hcp,neutral,opt,screen_selected,true,screening host,,CHE/OER/04_O/hcp/opt,-312.48276402,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/04_O/top/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/04_O/top/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/04_O/top/opt,screening,che_oer,CHE/OER/04_O/top,neutral,opt,screen_candidate,true,screening host,,CHE/OER/04_O/top/opt,-311.19586705,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/05_O2/bridge/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/05_O2/bridge/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/05_O2/bridge/opt,screening,che_oer,CHE/OER/05_O2/bridge,neutral,opt,screen_candidate,true,screening host,,CHE/OER/05_O2/bridge/opt,-316.93023706,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/05_O2/fcc/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/05_O2/fcc/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/05_O2/fcc/opt,screening,che_oer,CHE/OER/05_O2/fcc,neutral,opt,screen_candidate,true,screening host,,CHE/OER/05_O2/fcc/opt,-316.92009161,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/05_O2/hcp/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/05_O2/hcp/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/05_O2/hcp/opt,screening,che_oer,CHE/OER/05_O2/hcp,neutral,opt,screen_candidate,true,screening host,,CHE/OER/05_O2/hcp/opt,-316.03472945,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/05_O2/side_on/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/05_O2/side_on/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/05_O2/side_on/opt,screening,che_oer,CHE/OER/05_O2/side_on,neutral,opt,screen_candidate,true,screening host,,CHE/OER/05_O2/side_on/opt,-317.94388632,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/05_O2/top/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/05_O2/top/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/05_O2/top/opt,screening,che_oer,CHE/OER/05_O2/top,neutral,opt,screen_candidate,true,screening host,,CHE/OER/05_O2/top/opt,-316.64075511,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/06_OOH/bridge/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/06_OOH/bridge/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/06_OOH/bridge/opt,screening,che_oer,CHE/OER/06_OOH/bridge,neutral,opt,screen_candidate,true,screening host,,CHE/OER/06_OOH/bridge/opt,-322.55106026,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/06_OOH/fcc_bridge/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/06_OOH/fcc_bridge/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/06_OOH/fcc_bridge/opt,screening,che_oer,CHE/OER/06_OOH/fcc_bridge,neutral,opt,screen_candidate,true,screening host,,CHE/OER/06_OOH/fcc_bridge/opt,-322.12648514,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/06_OOH/hcp/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/06_OOH/hcp/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/06_OOH/hcp/opt,screening,che_oer,CHE/OER/06_OOH/hcp,neutral,opt,screen_selected,true,screening host,,CHE/OER/06_OOH/hcp/opt,-320.53408973,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/06_OOH/single_site/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/06_OOH/single_site/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/06_OOH/single_site/opt,screening,che_oer,CHE/OER/06_OOH/single_site,neutral,opt,screen_candidate,true,screening host,,CHE/OER/06_OOH/single_site/opt,-320.88196964,,,,12,5.4.4,vasp_std,intel,
-screening/che_oer/06_OOH/top/freq,screening,che_oer,,neutral,freq,superseded_freq,false,screening host,,CHE/OER/06_OOH/top/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/che_oer/06_OOH/top/opt,screening,che_oer,CHE/OER/06_OOH/top,neutral,opt,screen_candidate,true,screening host,,CHE/OER/06_OOH/top/opt,-320.90257595,,,,12,5.4.4,vasp_std,intel,
-screening/desorb_or_dehydroxyl/constant_potential/ch2ohco_oh/opt,screening,desorb_or_dehydroxyl,,neutral,opt,screen_failed,false,screening host,,desorb_or_dehydroxyl/constant_potential/ch2ohco_oh/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/desorb_or_dehydroxyl/constant_potential/ch2ohcooh/opt,screening,desorb_or_dehydroxyl,,neutral,opt,screen_failed,false,screening host,,desorb_or_dehydroxyl/constant_potential/ch2ohcooh/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/double_side_ox/cocoo/freq,screening,double_side_ox,,neutral,freq,superseded_freq,false,screening host,,double_side_ox/cocoo/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/double_side_ox/cocoo/opt,screening,double_side_ox,double_side_ox/cocoo,neutral,opt,screen_candidate,true,screening host,,double_side_ox/cocoo/opt,-344.81739507,,,,12,5.4.4,vasp_std,intel,
-screening/double_side_ox/cocooh/freq,screening,double_side_ox,,neutral,freq,superseded_freq,false,screening host,,double_side_ox/cocooh/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/double_side_ox/cocooh/opt,screening,double_side_ox,double_side_ox/cocooh,neutral,opt,screen_candidate,true,screening host,,double_side_ox/cocooh/opt,-348.97642351,,,,12,5.4.4,vasp_std,intel,
-screening/double_side_ox/cohcoo/freq,screening,double_side_ox,,neutral,freq,superseded_freq,false,screening host,,double_side_ox/cohcoo/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/double_side_ox/cohcoo/opt,screening,double_side_ox,double_side_ox/cohcoo,neutral,opt,screen_candidate,true,screening host,,double_side_ox/cohcoo/opt,-348.79155681,,,,12,5.4.4,vasp_std,intel,
-screening/double_side_ox/cohcooh/freq,screening,double_side_ox,,neutral,freq,superseded_freq,false,screening host,,double_side_ox/cohcooh/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/double_side_ox/cohcooh/opt,screening,double_side_ox,double_side_ox/cohcooh,neutral,opt,screen_candidate,true,screening host,,double_side_ox/cohcooh/opt,-352.35920857,,,,12,5.4.4,vasp_std,intel,
-screening/double_side_ox/cohcooh_2/freq,screening,double_side_ox,,neutral,freq,superseded_freq,false,screening host,,double_side_ox/cohcooh_2/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/double_side_ox/cohcooh_2/opt,screening,double_side_ox,double_side_ox/cohcooh_2,neutral,opt,screen_candidate,true,screening host,,double_side_ox/cohcooh_2/opt,-352.66529404,,,,12,5.4.4,vasp_std,intel,
-screening/double_side_ox/coohcoo/freq,screening,double_side_ox,,neutral,freq,superseded_freq,false,screening host,,double_side_ox/coohcoo/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/double_side_ox/coohcoo/opt,screening,double_side_ox,double_side_ox/coohcoo,neutral,opt,screen_candidate,true,screening host,,double_side_ox/coohcoo/opt,-355.16284883,,,,12,5.4.4,vasp_std,intel,
-screening/hor/coverage/H/freq,screening,hor,,neutral,freq,superseded_freq,false,screening host,,HOR/coverage/H/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/hor/coverage/H/opt,screening,hor,HOR/coverage/H,neutral,opt,screen_selected,true,screening host,,HOR/coverage/H/opt,-310.24125243,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/0_eg/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/0_eg/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/0_eg/opt,screening,single_side_ox,single_side_ox/0_eg,neutral,opt,screen_candidate,true,screening host,,single_side_ox/0_eg/opt,-53.31825568,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/1_ch2oh_choh/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/1_ch2oh*choh/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/1_ch2oh_choh/opt,screening,single_side_ox,single_side_ox/1_ch2oh*choh,neutral,opt,screen_selected,true,screening host,,single_side_ox/1_ch2oh*choh/opt,-356.84617747,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/2.1_ch2ohc_oh/another_struc/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/2.1_ch2ohc*oh/another_struc/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/2.1_ch2ohc_oh/another_struc/opt,screening,single_side_ox,single_side_ox/2.1_ch2ohc*oh/another_struc,neutral,opt,screen_selected,true,screening host,,single_side_ox/2.1_ch2ohc*oh/another_struc/opt,-353.25146636,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/2.1_ch2ohc_oh/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/2.1_ch2ohc*oh/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/2.1_ch2ohc_oh/opt,screening,single_side_ox,single_side_ox/2.1_ch2ohc*oh,neutral,opt,screen_candidate,true,screening host,,single_side_ox/2.1_ch2ohc*oh/opt,-353.16257568,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/2.2_ch2ohc_ho/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/2.2_ch2ohc*ho/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/2.2_ch2ohc_ho/opt,screening,single_side_ox,single_side_ox/2.2_ch2ohc*ho,neutral,opt,screen_candidate,true,screening host,,single_side_ox/2.2_ch2ohc*ho/opt,-352.45811538,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/3_ch2ohc_o/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/3_ch2ohc*o/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/3_ch2ohc_o/opt,screening,single_side_ox,single_side_ox/3_ch2ohc*o,neutral,opt,screen_selected,true,screening host,,single_side_ox/3_ch2ohc*o/opt,-349.58038648,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/4.0__ch2ohcooh/another_ad2_configuration/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/4.0_*ch2ohcooh/another_ad2_configuration/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/4.0__ch2ohcooh/another_ad2_configuration/opt,screening,single_side_ox,single_side_ox/4.0_*ch2ohcooh/another_ad2_configuration,neutral,opt,screen_candidate,true,screening host,,single_side_ox/4.0_*ch2ohcooh/another_ad2_configuration/opt,-359.95411094,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/4.0__ch2ohcooh/another_ad_configuration/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/4.0_*ch2ohcooh/another_ad_configuration/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/4.0__ch2ohcooh/another_ad_configuration/opt,screening,single_side_ox,single_side_ox/4.0_*ch2ohcooh/another_ad_configuration,neutral,opt,screen_candidate,true,screening host,,single_side_ox/4.0_*ch2ohcooh/another_ad_configuration/opt,-359.96649659,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/4.0__ch2ohcooh/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/4.0_*ch2ohcooh/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/4.0__ch2ohcooh/opt,screening,single_side_ox,single_side_ox/4.0_*ch2ohcooh,neutral,opt,screen_candidate,true,screening host,,single_side_ox/4.0_*ch2ohcooh/opt,-359.77090377,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/4_ch2ohco_o_/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/4_ch2ohco*o*/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/4_ch2ohco_o_/opt,screening,single_side_ox,single_side_ox/4_ch2ohco*o*,neutral,opt,screen_selected,true,screening host,,single_side_ox/4_ch2ohco*o*/opt,-356.38399220,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/5.1_ch2oco_o_/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/5.1_ch2oco*o*/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/5.1_ch2oco_o_/opt,screening,single_side_ox,single_side_ox/5.1_ch2oco*o*,neutral,opt,screen_candidate,true,screening host,,single_side_ox/5.1_ch2oco*o*/opt,-350.57878298,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/5.2_chohco_o_/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/5.2_chohco*o*/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/5.2_chohco_o_/opt,screening,single_side_ox,single_side_ox/5.2_chohco*o*,neutral,opt,screen_candidate,true,screening host,,single_side_ox/5.2_chohco*o*/opt,-351.75463255,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/6_choco_o_/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/6_choco*o*/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/6_choco_o_/opt,screening,single_side_ox,single_side_ox/6_choco*o*,neutral,opt,screen_candidate,true,screening host,,single_side_ox/6_choco*o*/opt,-348.20838328,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/7_coco_o_/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/7_coco*o*/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/7_coco_o_/opt,screening,single_side_ox,single_side_ox/7_coco*o*,neutral,opt,screen_candidate,true,screening host,,single_side_ox/7_coco*o*/opt,-344.38170138,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/0.4V/ad_ch2ohcoo/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/desorb/0.4V/ad_ch2ohcoo/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/0.4V/ad_ch2ohcoo/opt,screening,single_side_ox,single_side_ox/desorb/0.4V/ad_ch2ohcoo,neutral,opt,screen_candidate,true,screening host,,single_side_ox/desorb/0.4V/ad_ch2ohcoo/opt,-357.30305749,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/0.4V/slab/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/desorb/0.4V/slab/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/0.4V/slab/opt,screening,single_side_ox,single_side_ox/desorb/0.4V/slab,neutral,opt,screen_candidate,true,screening host,,single_side_ox/desorb/0.4V/slab/opt,-307.18021515,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/0.4V/template/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/desorb/0.4V/template/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/0.9V/ad_ch2ohcoo_opt/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/desorb/0.9V/ad_ch2ohcoo_opt/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/0.9V/ad_ch2ohcoo_opt/opt,screening,single_side_ox,single_side_ox/desorb/0.9V/ad_ch2ohcoo_opt,neutral,opt,screen_candidate,true,screening host,,single_side_ox/desorb/0.9V/ad_ch2ohcoo_opt/opt,-356.79086913,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/0.9V/slab/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/desorb/0.9V/slab/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/0.9V/slab/opt,screening,single_side_ox,single_side_ox/desorb/0.9V/slab,neutral,opt,screen_candidate,true,screening host,,single_side_ox/desorb/0.9V/slab/opt,-306.59799650,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/0.9V/template/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/desorb/0.9V/template/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/ch2ohcoo/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/desorb/ch2ohcoo/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/ch2ohcoo/opt,screening,single_side_ox,single_side_ox/desorb/ch2ohcoo,neutral,opt,screen_candidate,true,screening host,,single_side_ox/desorb/ch2ohcoo/opt,-53.43271467,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.4V/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.4V/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.4V/opt,screening,single_side_ox,single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.4V,neutral,opt,screen_selected,true,screening host,,single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.4V/opt,-361.14097785,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.9V/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.9V/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.9V/opt,screening,single_side_ox,single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.9V,neutral,opt,screen_candidate,true,screening host,,single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.9V/opt,-360.64610197,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/1/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/1/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/1/opt,screening,single_side_ox,single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/1,neutral,opt,screen_selected,true,screening host,,single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/1/opt,-361.03600626,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/2/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/2/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/2/opt,screening,single_side_ox,single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/2,neutral,opt,screen_candidate,true,screening host,,single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/2/opt,-360.66709061,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.9V/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.9V/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.9V/opt,screening,single_side_ox,single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.9V,neutral,opt,screen_candidate,true,screening host,,single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.9V/opt,-360.54435178,,,,12,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/cineb/00,screening,single_side_ox,,neutral,neb,excluded_scope,false,screening host,,single_side_ox/hydrogenation_and_desorb/cineb/00,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/cineb/01,screening,single_side_ox,,neutral,neb,excluded_scope,false,screening host,,single_side_ox/hydrogenation_and_desorb/cineb/01,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/cineb/02,screening,single_side_ox,,neutral,neb,excluded_scope,false,screening host,,single_side_ox/hydrogenation_and_desorb/cineb/02,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/cineb/03,screening,single_side_ox,,neutral,neb,excluded_scope,false,screening host,,single_side_ox/hydrogenation_and_desorb/cineb/03,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/cineb/04,screening,single_side_ox,,neutral,neb,excluded_scope,false,screening host,,single_side_ox/hydrogenation_and_desorb/cineb/04,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/cineb/05,screening,single_side_ox,,neutral,neb,excluded_scope,false,screening host,,single_side_ox/hydrogenation_and_desorb/cineb/05,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/cineb/06,screening,single_side_ox,,neutral,neb,excluded_scope,false,screening host,,single_side_ox/hydrogenation_and_desorb/cineb/06,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/cineb/07,screening,single_side_ox,,neutral,neb,excluded_scope,false,screening host,,single_side_ox/hydrogenation_and_desorb/cineb/07,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/hydrogenation_and_desorb/cineb/stru,screening,single_side_ox,,neutral,neb,excluded_scope,false,screening host,,single_side_ox/hydrogenation_and_desorb/cineb/stru,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/thermal/freq,screening,single_side_ox,,neutral,freq,superseded_freq,false,screening host,,single_side_ox/thermal/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/thermal/opt,screening,single_side_ox,single_side_ox/thermal,neutral,opt,screen_candidate,true,screening host,,single_side_ox/thermal/opt,-360.24138342,,,,12,5.4.4,vasp_std,intel,
-screening/double_side_ox/template/adsorbate/freq,screening,template,,neutral,freq,excluded_scope,false,screening host,,double_side_ox/template/adsorbate/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/double_side_ox/template/adsorbate/opt,screening,template,,neutral,opt,excluded_scope,false,screening host,,double_side_ox/template/adsorbate/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/double_side_ox/template/gas/freq,screening,template,,neutral,freq,excluded_scope,false,screening host,,double_side_ox/template/gas/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/double_side_ox/template/gas/opt,screening,template,,neutral,opt,excluded_scope,false,screening host,,double_side_ox/template/gas/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/0.4V/template/opt,screening,template,,neutral,opt,excluded_scope,false,screening host,,single_side_ox/desorb/0.4V/template/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/desorb/0.9V/template/opt,screening,template,,neutral,opt,excluded_scope,false,screening host,,single_side_ox/desorb/0.9V/template/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/template/adsorbate/freq,screening,template,,neutral,freq,excluded_scope,false,screening host,,single_side_ox/template/adsorbate/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/template/adsorbate/opt,screening,template,,neutral,opt,excluded_scope,false,screening host,,single_side_ox/template/adsorbate/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/template/gas/freq,screening,template,,neutral,freq,excluded_scope,false,screening host,,single_side_ox/template/gas/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/template/gas/opt,screening,template,,neutral,opt,excluded_scope,false,screening host,,single_side_ox/template/gas/opt,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/template/vaspsol_cp/freq,screening,template,,neutral,freq,excluded_scope,false,screening host,,single_side_ox/template/vaspsol_cp/freq,,,,,0,5.4.4,vasp_std,intel,
-screening/single_side_ox/template/vaspsol_cp/opt,screening,template,,neutral,opt,excluded_scope,false,screening host,,single_side_ox/template/vaspsol_cp/opt,,,,,0,5.4.4,vasp_std,intel,
+job_id,flow,family,species,potential,stage,status,E0_eV,Omega_eV,q_sol,Gcorr_eV,n_files,vasp_version
+production/H2/neutral/fine_opt,production,gc_che,H2,neutral,fine_opt,prod_final,-6.77273299,-6.77273299,,-0.048013,8,5.4.4
+production/H2/neutral/frq,production,gc_che,H2,neutral,frq,prod_final,,,,-0.048013,9,5.4.4
+production/H2O/neutral/fine_opt,production,gc_che,H2O,neutral,fine_opt,prod_final,-14.22725966,-14.22725966,,-0.003787,8,5.4.4
+production/H2O/neutral/frq,production,gc_che,H2O,neutral,frq,prod_final,,,,-0.003787,9,5.4.4
+production/HOCH2CH2OH/neutral/fine_opt,production,gc_che,HOCH2CH2OH,neutral,fine_opt,prod_final,-53.31351958,-53.31351958,,1.48995,8,5.4.4
+production/HOCH2CH2OH/neutral/frq,production,gc_che,HOCH2CH2OH,neutral,frq,prod_final,,,,1.48995,9,5.4.4
+production/_H/0.4V/fine_opt,production,gc_che,_H,0.4V,fine_opt,prod_final,-311.16542714,-311.16542714,1.39799504,0.145205,8,5.4.4
+production/_H/0.4V/frq,production,gc_che,_H,0.4V,frq,prod_final,,,,0.145205,9,5.4.4
+production/_H/0.4V/pre_opt,production,gc_che,_H,0.4V,pre_opt,prod_final,,,,,8,5.4.4
+production/_H/0.9V/fine_opt,production,gc_che,_H,0.9V,fine_opt,prod_final,-310.56888075,-310.56888075,0.96641637,0.145282,8,5.4.4
+production/_H/0.9V/frq,production,gc_che,_H,0.9V,frq,prod_final,,,,0.145282,9,5.4.4
+production/_H/0.9V/pre_opt,production,gc_che,_H,0.9V,pre_opt,prod_final,,,,,8,5.4.4
+production/_O/0.4V/fine_opt,production,gc_che,_O,0.4V,fine_opt,prod_final,-313.44779999,-313.44779999,1.42089007,0.050478,8,5.4.4
+production/_O/0.4V/frq,production,gc_che,_O,0.4V,frq,prod_final,,,,0.050478,9,5.4.4
+production/_O/0.4V/pre_opt,production,gc_che,_O,0.4V,pre_opt,prod_final,,,,,8,5.4.4
+production/_O/0.9V/fine_opt,production,gc_che,_O,0.9V,fine_opt,prod_final,-312.83920633,-312.83920633,0.99656329,0.053175,8,5.4.4
+production/_O/0.9V/frq,production,gc_che,_O,0.9V,frq,prod_final,,,,0.053175,9,5.4.4
+production/_O/0.9V/pre_opt,production,gc_che,_O,0.9V,pre_opt,prod_final,,,,,8,5.4.4
+production/_OH/0.4V/fine_opt,production,gc_che,_OH,0.4V,fine_opt,prod_final,-317.45155734,-317.45155734,1.43198109,0.295731,8,5.4.4
+production/_OH/0.4V/frq,production,gc_che,_OH,0.4V,frq,prod_final,,,,0.295731,9,5.4.4
+production/_OH/0.4V/pre_opt,production,gc_che,_OH,0.4V,pre_opt,prod_final,,,,,8,5.4.4
+production/_OH/0.9V/fine_opt,production,gc_che,_OH,0.9V,fine_opt,prod_final,-316.83738873,-316.83738873,1.00238511,0.300299,8,5.4.4
+production/_OH/0.9V/frq,production,gc_che,_OH,0.9V,frq,prod_final,,,,0.300299,9,5.4.4
+production/_OH/0.9V/pre_opt,production,gc_che,_OH,0.9V,pre_opt,prod_final,,,,,8,5.4.4
+production/_OOH/0.4V/fine_opt,production,gc_che,_OOH,0.4V,fine_opt,prod_final,,,,,4,5.4.4
+production/_OOH/0.4V/frq,production,gc_che,_OOH,0.4V,frq,prod_final,,,,,4,5.4.4
+production/_OOH/0.4V/pre_opt,production,gc_che,_OOH,0.4V,pre_opt,prod_final,,,,,8,5.4.4
+production/_OOH/0.9V/fine_opt,production,gc_che,_OOH,0.9V,fine_opt,prod_final,,,,,4,5.4.4
+production/_OOH/0.9V/frq,production,gc_che,_OOH,0.9V,frq,prod_final,,,,,4,5.4.4
+production/_OOH/0.9V/pre_opt,production,gc_che,_OOH,0.9V,pre_opt,prod_final,,,,,8,5.4.4
+production/_ch2ohcoo_p_h/0.4V/fine_opt,production,gc_che,_ch2ohcoo+_h,0.4V,fine_opt,prod_final,-361.18703532,-361.18703532,1.26952454,1.495833,8,5.4.4
+production/_ch2ohcoo_p_h/0.4V/frq,production,gc_che,_ch2ohcoo+_h,0.4V,frq,prod_final,,,,1.495833,9,5.4.4
+production/_ch2ohcoo_p_h/0.4V/pre_opt,production,gc_che,_ch2ohcoo+_h,0.4V,pre_opt,prod_final,,,,,8,5.4.4
+production/_ch2ohcoo_p_h/0.9V/fine_opt,production,gc_che,_ch2ohcoo+_h,0.9V,fine_opt,prod_final,-360.66089468,-360.66089468,0.80415687,1.567214,8,5.4.4
+production/_ch2ohcoo_p_h/0.9V/frq,production,gc_che,_ch2ohcoo+_h,0.9V,frq,prod_final,,,,1.567214,9,5.4.4
+production/_ch2ohcoo_p_h/0.9V/pre_opt,production,gc_che,_ch2ohcoo+_h,0.9V,pre_opt,prod_final,,,,,8,5.4.4
+production/_ch2ohcooh/0.4V/fine_opt,production,gc_che,_ch2ohcooh,0.4V,fine_opt,prod_final,-361.07461164,-361.07461164,1.22206886,1.632252,8,5.4.4
+production/_ch2ohcooh/0.4V/frq,production,gc_che,_ch2ohcooh,0.4V,frq,prod_final,,,,1.632252,9,5.4.4
+production/_ch2ohcooh/0.4V/pre_opt,production,gc_che,_ch2ohcooh,0.4V,pre_opt,prod_final,,,,,8,5.4.4
+production/_ch2ohcooh/0.9V/fine_opt,production,gc_che,_ch2ohcooh,0.9V,fine_opt,prod_final,-360.56050163,-360.56050163,0.81980123,1.625788,8,5.4.4
+production/_ch2ohcooh/0.9V/frq,production,gc_che,_ch2ohcooh,0.9V,frq,prod_final,,,,1.625788,9,5.4.4
+production/_ch2ohcooh/0.9V/pre_opt,production,gc_che,_ch2ohcooh,0.9V,pre_opt,prod_final,,,,,8,5.4.4
+production/ch2oh_choh/0.4V/fine_opt,production,gc_che,ch2oh_choh,0.4V,fine_opt,prod_final,-357.84255855,-357.84255855,1.25392631,1.80052,8,5.4.4
+production/ch2oh_choh/0.4V/frq,production,gc_che,ch2oh_choh,0.4V,frq,prod_final,,,,1.80052,9,5.4.4
+production/ch2oh_choh/0.4V/pre_opt,production,gc_che,ch2oh_choh,0.4V,pre_opt,prod_final,,,,,8,5.4.4
+production/ch2oh_choh/0.9V/fine_opt,production,gc_che,ch2oh_choh,0.9V,fine_opt,prod_final,-357.32617453,-357.32617453,0.80617594,1.805261,8,5.4.4
+production/ch2oh_choh/0.9V/frq,production,gc_che,ch2oh_choh,0.9V,frq,prod_final,,,,1.805261,9,5.4.4
+production/ch2oh_choh/0.9V/pre_opt,production,gc_che,ch2oh_choh,0.9V,pre_opt,prod_final,,,,,8,5.4.4
+production/ch2oh_co/0.4V/fine_opt,production,gc_che,ch2oh_co,0.4V,fine_opt,prod_final,-350.61455793,-350.61455793,1.2886473,1.244317,8,5.4.4
+production/ch2oh_co/0.4V/frq,production,gc_che,ch2oh_co,0.4V,frq,prod_final,,,,1.244317,9,5.4.4
+production/ch2oh_co/0.4V/pre_opt,production,gc_che,ch2oh_co,0.4V,pre_opt,prod_final,,,,,8,5.4.4
+production/ch2oh_co/0.9V/fine_opt,production,gc_che,ch2oh_co,0.9V,fine_opt,prod_final,-350.07357427,-350.07357427,0.86814714,1.262984,8,5.4.4
+production/ch2oh_co/0.9V/frq,production,gc_che,ch2oh_co,0.9V,frq,prod_final,,,,1.262984,9,5.4.4
+production/ch2oh_co/0.9V/pre_opt,production,gc_che,ch2oh_co,0.9V,pre_opt,prod_final,,,,,8,5.4.4
+production/ch2oh_coh/0.4V/fine_opt,production,gc_che,ch2oh_coh,0.4V,fine_opt,prod_final,-354.13100244,-354.13100244,1.11584396,1.498893,8,5.4.4
+production/ch2oh_coh/0.4V/frq,production,gc_che,ch2oh_coh,0.4V,frq,prod_final,,,,1.498893,9,5.4.4
+production/ch2oh_coh/0.4V/pre_opt,production,gc_che,ch2oh_coh,0.4V,pre_opt,prod_final,,,,,8,5.4.4
+production/ch2oh_coh/0.9V/fine_opt,production,gc_che,ch2oh_coh,0.9V,fine_opt,prod_final,-353.66942354,-353.66942354,0.68202923,1.542157,8,5.4.4
+production/ch2oh_coh/0.9V/frq,production,gc_che,ch2oh_coh,0.9V,frq,prod_final,,,,1.542157,9,5.4.4
+production/ch2oh_coh/0.9V/pre_opt,production,gc_che,ch2oh_coh,0.9V,pre_opt,prod_final,,,,,8,5.4.4
+production/ch2ohco_o_/0.4V/fine_opt,production,gc_che,ch2ohco_o_,0.4V,fine_opt,prod_final,-357.35388637,-357.35388637,1.28728778,1.309335,8,5.4.4
+production/ch2ohco_o_/0.4V/frq,production,gc_che,ch2ohco_o_,0.4V,frq,prod_final,,,,1.309335,9,5.4.4
+production/ch2ohco_o_/0.4V/pre_opt,production,gc_che,ch2ohco_o_,0.4V,pre_opt,prod_final,,,,,8,5.4.4
+production/ch2ohco_o_/0.9V/fine_opt,production,gc_che,ch2ohco_o_,0.9V,fine_opt,prod_final,-356.81557379,-356.81557379,0.83785497,1.346626,8,5.4.4
+production/ch2ohco_o_/0.9V/frq,production,gc_che,ch2ohco_o_,0.9V,frq,prod_final,,,,1.346626,9,5.4.4
+production/ch2ohco_o_/0.9V/pre_opt,production,gc_che,ch2ohco_o_,0.9V,pre_opt,prod_final,,,,,8,5.4.4
+production/ch2ohcooh/0.4V/fine_opt,production,gc_che,ch2ohcooh,0.4V,fine_opt,prod_final,-361.04919304,-361.04919304,1.26236002,1.649407,8,5.4.4
+production/ch2ohcooh/0.4V/frq,production,gc_che,ch2ohcooh,0.4V,frq,prod_final,,,,1.649407,9,5.4.4
+production/ch2ohcooh/0.4V/pre_opt,production,gc_che,ch2ohcooh,0.4V,pre_opt,prod_final,,,,,8,5.4.4
+production/ch2ohcooh/0.9V/fine_opt,production,gc_che,ch2ohcooh,0.9V,fine_opt,prod_final,-360.50166728,-360.50166728,0.85314533,1.630785,8,5.4.4
+production/ch2ohcooh/0.9V/frq,production,gc_che,ch2ohcooh,0.9V,frq,prod_final,,,,1.630785,9,5.4.4
+production/ch2ohcooh/0.9V/pre_opt,production,gc_che,ch2ohcooh,0.9V,pre_opt,prod_final,,,,,8,5.4.4
+production/slab/0.4V/fine_opt,production,gc_che,slab,0.4V,fine_opt,prod_final,-307.24530422,-307.24530422,1.41789119,0.0,8,5.4.4
+production/slab/0.9V/fine_opt,production,gc_che,slab,0.9V,fine_opt,prod_final,-306.63908186,-306.63908186,0.99879037,0.0,8,5.4.4
+screening/che_eg_oxidation/00_molecules/CH2OHCH2OH/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/00_molecules/CH2OHCH2OH,neutral,opt,screen_selected,-53.31825568,,,,8,5.4.4
+screening/che_eg_oxidation/00_molecules/H2/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/00_molecules/H2,neutral,opt,screen_selected,-6.76910634,,,,8,5.4.4
+screening/che_eg_oxidation/00_molecules/ch2ohcoo/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/00_molecules/ch2ohcoo,neutral,opt,screen_candidate,-47.16397981,,,,8,5.4.4
+screening/che_eg_oxidation/00_molecules/ch2ohcooh/1/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/00_molecules/ch2ohcooh/1,neutral,opt,screen_candidate,-52.86237211,,,,8,5.4.4
+screening/che_eg_oxidation/01_slab/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/01_slab,neutral,opt,screen_selected,-306.29884039,,,,8,5.4.4
+screening/che_eg_oxidation/02_CH2OHCH2OH/bridge/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/02_CH2OHCH2OH/bridge,neutral,opt,screen_candidate,-360.53226589,,,,8,5.4.4
+screening/che_eg_oxidation/02_CH2OHCH2OH/top_1/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/02_CH2OHCH2OH/top_1,neutral,opt,screen_candidate,-360.30948517,,,,8,5.4.4
+screening/che_eg_oxidation/02_CH2OHCH2OH/top_2/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/02_CH2OHCH2OH/top_2,neutral,opt,screen_candidate,-360.36813509,,,,8,5.4.4
+screening/che_eg_oxidation/02_CH2OHCH2OH/top_3/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/02_CH2OHCH2OH/top_3,neutral,opt,screen_candidate,-360.41835396,,,,8,5.4.4
+screening/che_eg_oxidation/02_CH2OHCH2OH/top_4/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/02_CH2OHCH2OH/top_4,neutral,opt,screen_candidate,-360.31972294,,,,8,5.4.4
+screening/che_eg_oxidation/03_1_CH2OHCH2O/2bridge/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_1_CH2OHCH2O/2bridge,neutral,opt,screen_candidate,-356.30424896,,,,8,5.4.4
+screening/che_eg_oxidation/03_1_CH2OHCH2O/bridge/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_1_CH2OHCH2O/bridge,neutral,opt,screen_candidate,-355.90136964,,,,8,5.4.4
+screening/che_eg_oxidation/03_1_CH2OHCH2O/fcc/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_1_CH2OHCH2O/fcc,neutral,opt,screen_candidate,-355.82234036,,,,8,5.4.4
+screening/che_eg_oxidation/03_1_CH2OHCH2O/hcp/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_1_CH2OHCH2O/hcp,neutral,opt,screen_candidate,-355.81200785,,,,8,5.4.4
+screening/che_eg_oxidation/03_1_CH2OHCH2O/top/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_1_CH2OHCH2O/top,neutral,opt,screen_candidate,-356.01802384,,,,8,5.4.4
+screening/che_eg_oxidation/03_2_CH2OHCHOH/bridge/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_2_CH2OHCHOH/bridge,neutral,opt,screen_candidate,-356.84617747,,,,8,5.4.4
+screening/che_eg_oxidation/03_2_CH2OHCHOH/fcc/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_2_CH2OHCHOH/fcc,neutral,opt,screen_candidate,-356.36041996,,,,8,5.4.4
+screening/che_eg_oxidation/03_2_CH2OHCHOH/top/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/03_2_CH2OHCHOH/top,neutral,opt,screen_candidate,-356.15144312,,,,8,5.4.4
+screening/che_eg_oxidation/04_1_CH2OHCHO/bridge/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_1_CH2OHCHO/bridge,neutral,opt,screen_candidate,-352.53317512,,,,8,5.4.4
+screening/che_eg_oxidation/04_1_CH2OHCHO/fcc/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_1_CH2OHCHO/fcc,neutral,opt,screen_candidate,-352.47819720,,,,8,5.4.4
+screening/che_eg_oxidation/04_1_CH2OHCHO/hcp/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_1_CH2OHCHO/hcp,neutral,opt,screen_candidate,-352.24749153,,,,8,5.4.4
+screening/che_eg_oxidation/04_1_CH2OHCHO/par/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_1_CH2OHCHO/par,neutral,opt,screen_candidate,-352.49166874,,,,8,5.4.4
+screening/che_eg_oxidation/04_1_CH2OHCHO/par2/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_1_CH2OHCHO/par2,neutral,opt,screen_candidate,-352.66768886,,,,8,5.4.4
+screening/che_eg_oxidation/04_1_CH2OHCHO/top/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_1_CH2OHCHO/top,neutral,opt,screen_candidate,-352.52561475,,,,8,5.4.4
+screening/che_eg_oxidation/04_2_CH2OCH2O/1/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_2_CH2OCH2O/1,neutral,opt,screen_candidate,-351.79694989,,,,8,5.4.4
+screening/che_eg_oxidation/04_2_CH2OCH2O/2/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_2_CH2OCH2O/2,neutral,opt,screen_candidate,-351.83854970,,,,8,5.4.4
+screening/che_eg_oxidation/04_2_CH2OCH2O/3/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_2_CH2OCH2O/3,neutral,opt,screen_candidate,-351.70096993,,,,8,5.4.4
+screening/che_eg_oxidation/04_3_CHOHCHOH/1/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_3_CHOHCHOH/1,neutral,opt,screen_candidate,-353.47273416,,,,8,5.4.4
+screening/che_eg_oxidation/04_4_CH2OCHOH/1/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_4_CH2OCHOH/1,neutral,opt,screen_candidate,-352.68698814,,,,8,5.4.4
+screening/che_eg_oxidation/04_4_CH2OCHOH/2/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/04_4_CH2OCHOH/2,neutral,opt,screen_candidate,-352.95292721,,,,8,5.4.4
+screening/che_eg_oxidation/05_1_CH2OHCOOH/par/opt,screening,che_eg_oxidation,CHE/EG_Oxidation/05_1_CH2OHCOOH/par,neutral,opt,screen_selected,-359.77090377,,,,8,5.4.4
+screening/che_oer/00_molecules/00_H2O/opt,screening,che_oer,CHE/OER/00_molecules/00_H2O,neutral,opt,screen_selected,-14.22746860,,,,8,5.4.4
+screening/che_oer/00_molecules/01_H2/opt,screening,che_oer,CHE/OER/00_molecules/01_H2,neutral,opt,screen_candidate,-6.76907769,,,,8,5.4.4
+screening/che_oer/02_H2O/bridge/opt,screening,che_oer,CHE/OER/02_H2O/bridge,neutral,opt,screen_candidate,-320.99145920,,,,8,5.4.4
+screening/che_oer/02_H2O/fcc/opt,screening,che_oer,CHE/OER/02_H2O/fcc,neutral,opt,screen_candidate,-320.98745853,,,,8,5.4.4
+screening/che_oer/02_H2O/hcp/opt,screening,che_oer,CHE/OER/02_H2O/hcp,neutral,opt,screen_candidate,-320.99035996,,,,8,5.4.4
+screening/che_oer/02_H2O/top/opt,screening,che_oer,CHE/OER/02_H2O/top,neutral,opt,screen_candidate,-320.98882485,,,,8,5.4.4
+screening/che_oer/03_OH/bridge/opt,screening,che_oer,CHE/OER/03_OH/bridge,neutral,opt,screen_candidate,-316.35604030,,,,8,5.4.4
+screening/che_oer/03_OH/hcp/opt,screening,che_oer,CHE/OER/03_OH/hcp,neutral,opt,screen_candidate,-316.20695795,,,,8,5.4.4
+screening/che_oer/03_OH/top/opt,screening,che_oer,CHE/OER/03_OH/top,neutral,opt,screen_candidate,-316.36613387,,,,8,5.4.4
+screening/che_oer/03_OH/top_2/opt,screening,che_oer,CHE/OER/03_OH/top_2,neutral,opt,screen_selected,-316.36767276,,,,8,5.4.4
+screening/che_oer/04_O/bridge/opt,screening,che_oer,CHE/OER/04_O/bridge,neutral,opt,screen_candidate,-312.47131804,,,,8,5.4.4
+screening/che_oer/04_O/fcc/opt,screening,che_oer,CHE/OER/04_O/fcc,neutral,opt,screen_candidate,-312.06819702,,,,8,5.4.4
+screening/che_oer/04_O/hcp/opt,screening,che_oer,CHE/OER/04_O/hcp,neutral,opt,screen_selected,-312.48276402,,,,8,5.4.4
+screening/che_oer/04_O/top/opt,screening,che_oer,CHE/OER/04_O/top,neutral,opt,screen_candidate,-311.19586705,,,,8,5.4.4
+screening/che_oer/05_O2/bridge/opt,screening,che_oer,CHE/OER/05_O2/bridge,neutral,opt,screen_candidate,-316.93023706,,,,8,5.4.4
+screening/che_oer/05_O2/fcc/opt,screening,che_oer,CHE/OER/05_O2/fcc,neutral,opt,screen_candidate,-316.92009161,,,,8,5.4.4
+screening/che_oer/05_O2/hcp/opt,screening,che_oer,CHE/OER/05_O2/hcp,neutral,opt,screen_candidate,-316.03472945,,,,8,5.4.4
+screening/che_oer/05_O2/side_on/opt,screening,che_oer,CHE/OER/05_O2/side_on,neutral,opt,screen_candidate,-317.94388632,,,,8,5.4.4
+screening/che_oer/05_O2/top/opt,screening,che_oer,CHE/OER/05_O2/top,neutral,opt,screen_candidate,-316.64075511,,,,8,5.4.4
+screening/che_oer/06_OOH/bridge/opt,screening,che_oer,CHE/OER/06_OOH/bridge,neutral,opt,screen_candidate,-322.55106026,,,,8,5.4.4
+screening/che_oer/06_OOH/fcc_bridge/opt,screening,che_oer,CHE/OER/06_OOH/fcc_bridge,neutral,opt,screen_candidate,-322.12648514,,,,8,5.4.4
+screening/che_oer/06_OOH/hcp/opt,screening,che_oer,CHE/OER/06_OOH/hcp,neutral,opt,screen_selected,-320.53408973,,,,8,5.4.4
+screening/che_oer/06_OOH/single_site/opt,screening,che_oer,CHE/OER/06_OOH/single_site,neutral,opt,screen_candidate,-320.88196964,,,,8,5.4.4
+screening/che_oer/06_OOH/top/opt,screening,che_oer,CHE/OER/06_OOH/top,neutral,opt,screen_candidate,-320.90257595,,,,8,5.4.4
+screening/double_side_ox/cocoo/opt,screening,double_side_ox,double_side_ox/cocoo,neutral,opt,screen_candidate,-344.81739507,,,,8,5.4.4
+screening/double_side_ox/cocooh/opt,screening,double_side_ox,double_side_ox/cocooh,neutral,opt,screen_candidate,-348.97642351,,,,8,5.4.4
+screening/double_side_ox/cohcoo/opt,screening,double_side_ox,double_side_ox/cohcoo,neutral,opt,screen_candidate,-348.79155681,,,,8,5.4.4
+screening/double_side_ox/cohcooh/opt,screening,double_side_ox,double_side_ox/cohcooh,neutral,opt,screen_candidate,-352.35920857,,,,8,5.4.4
+screening/double_side_ox/cohcooh_2/opt,screening,double_side_ox,double_side_ox/cohcooh_2,neutral,opt,screen_candidate,-352.66529404,,,,8,5.4.4
+screening/double_side_ox/coohcoo/opt,screening,double_side_ox,double_side_ox/coohcoo,neutral,opt,screen_candidate,-355.16284883,,,,8,5.4.4
+screening/hor/coverage/H/opt,screening,hor,HOR/coverage/H,neutral,opt,screen_selected,-310.24125243,,,,8,5.4.4
+screening/single_side_ox/0_eg/opt,screening,single_side_ox,single_side_ox/0_eg,neutral,opt,screen_candidate,-53.31825568,,,,8,5.4.4
+screening/single_side_ox/1_ch2oh_choh/opt,screening,single_side_ox,single_side_ox/1_ch2oh*choh,neutral,opt,screen_selected,-356.84617747,,,,8,5.4.4
+screening/single_side_ox/2.1_ch2ohc_oh/another_struc/opt,screening,single_side_ox,single_side_ox/2.1_ch2ohc*oh/another_struc,neutral,opt,screen_selected,-353.25146636,,,,8,5.4.4
+screening/single_side_ox/2.1_ch2ohc_oh/opt,screening,single_side_ox,single_side_ox/2.1_ch2ohc*oh,neutral,opt,screen_candidate,-353.16257568,,,,8,5.4.4
+screening/single_side_ox/2.2_ch2ohc_ho/opt,screening,single_side_ox,single_side_ox/2.2_ch2ohc*ho,neutral,opt,screen_candidate,-352.45811538,,,,8,5.4.4
+screening/single_side_ox/3_ch2ohc_o/opt,screening,single_side_ox,single_side_ox/3_ch2ohc*o,neutral,opt,screen_selected,-349.58038648,,,,8,5.4.4
+screening/single_side_ox/4.0__ch2ohcooh/another_ad2_configuration/opt,screening,single_side_ox,single_side_ox/4.0_*ch2ohcooh/another_ad2_configuration,neutral,opt,screen_candidate,-359.95411094,,,,8,5.4.4
+screening/single_side_ox/4.0__ch2ohcooh/another_ad_configuration/opt,screening,single_side_ox,single_side_ox/4.0_*ch2ohcooh/another_ad_configuration,neutral,opt,screen_candidate,-359.96649659,,,,8,5.4.4
+screening/single_side_ox/4.0__ch2ohcooh/opt,screening,single_side_ox,single_side_ox/4.0_*ch2ohcooh,neutral,opt,screen_candidate,-359.77090377,,,,8,5.4.4
+screening/single_side_ox/4_ch2ohco_o_/opt,screening,single_side_ox,single_side_ox/4_ch2ohco*o*,neutral,opt,screen_selected,-356.38399220,,,,8,5.4.4
+screening/single_side_ox/5.1_ch2oco_o_/opt,screening,single_side_ox,single_side_ox/5.1_ch2oco*o*,neutral,opt,screen_candidate,-350.57878298,,,,8,5.4.4
+screening/single_side_ox/5.2_chohco_o_/opt,screening,single_side_ox,single_side_ox/5.2_chohco*o*,neutral,opt,screen_candidate,-351.75463255,,,,8,5.4.4
+screening/single_side_ox/6_choco_o_/opt,screening,single_side_ox,single_side_ox/6_choco*o*,neutral,opt,screen_candidate,-348.20838328,,,,8,5.4.4
+screening/single_side_ox/7_coco_o_/opt,screening,single_side_ox,single_side_ox/7_coco*o*,neutral,opt,screen_candidate,-344.38170138,,,,8,5.4.4
+screening/single_side_ox/desorb/0.4V/ad_ch2ohcoo/opt,screening,single_side_ox,single_side_ox/desorb/0.4V/ad_ch2ohcoo,neutral,opt,screen_candidate,-357.30305749,,,,8,5.4.4
+screening/single_side_ox/desorb/0.4V/slab/opt,screening,single_side_ox,single_side_ox/desorb/0.4V/slab,neutral,opt,screen_candidate,-307.18021515,,,,8,5.4.4
+screening/single_side_ox/desorb/0.9V/ad_ch2ohcoo_opt/opt,screening,single_side_ox,single_side_ox/desorb/0.9V/ad_ch2ohcoo_opt,neutral,opt,screen_candidate,-356.79086913,,,,8,5.4.4
+screening/single_side_ox/desorb/0.9V/slab/opt,screening,single_side_ox,single_side_ox/desorb/0.9V/slab,neutral,opt,screen_candidate,-306.59799650,,,,8,5.4.4
+screening/single_side_ox/desorb/ch2ohcoo/opt,screening,single_side_ox,single_side_ox/desorb/ch2ohcoo,neutral,opt,screen_candidate,-53.43271467,,,,8,5.4.4
+screening/single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.4V/opt,screening,single_side_ox,single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.4V,neutral,opt,screen_selected,-361.14097785,,,,8,5.4.4
+screening/single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.9V/opt,screening,single_side_ox,single_side_ox/hydrogenation_and_desorb/ch2ohcoo_h/0.9V,neutral,opt,screen_candidate,-360.64610197,,,,8,5.4.4
+screening/single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/1/opt,screening,single_side_ox,single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/1,neutral,opt,screen_selected,-361.03600626,,,,8,5.4.4
+screening/single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/2/opt,screening,single_side_ox,single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.4V/2,neutral,opt,screen_candidate,-360.66709061,,,,8,5.4.4
+screening/single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.9V/opt,screening,single_side_ox,single_side_ox/hydrogenation_and_desorb/ch2ohcooh/0.9V,neutral,opt,screen_candidate,-360.54435178,,,,8,5.4.4
+screening/single_side_ox/thermal/opt,screening,single_side_ox,single_side_ox/thermal,neutral,opt,screen_candidate,-360.24138342,,,,8,5.4.4
