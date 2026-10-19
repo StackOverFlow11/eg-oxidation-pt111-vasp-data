@@ -123,9 +123,9 @@ def main():
         eg_y[sp] = series("EG_Ox", sp)
     eg_y["acid2"] = dict(eg_y["_ch2ohcooh"])  # pos7 = 同一态，数值与 pos4 一致
 
-    oer = [("start", "*+H$_2$O"),
-           ("_OH", "*OH\n+(H$^+$+e$^-$)"),
-           ("_O", "*O\n+2(H$^+$+e$^-$)"),
+    oer = [("start", "*+2H$_2$O"),
+           ("_OH", "*OH + H$_2$O\n+(H$^+$+e$^-$)"),
+           ("_O", "*O + H$_2$O\n+2(H$^+$+e$^-$)"),
            ("O2", "O$_2$\n+4(H$^+$+e$^-$)")]
     oer_y = {"start": {"0.0V": 0.0, "0.4V": 0.0, "0.9V": 0.0},
              "_OH": series("OER", "_OH"), "_O": series("OER", "_O"),
@@ -268,8 +268,9 @@ def main():
                        her_y["_H"][uname]))
     vals_c.append((val(axc, 0, 0.0, 0.0, "#000000", dy=0.05, fs=11), 0.0))
     rung(axc, 0, 0.0, C00, "-", 2.2, w=0.18)  # state[0] 灰色覆盖蓝/红
-    labels_c.append(axc.text(0, 0.68, "*+(H$^+$+e$^-$)", ha="center", fontsize=8, fontweight="bold"))
-    labels_c.append(axc.text(1, 0.85, "*H", ha="center", fontsize=8, fontweight="bold"))
+    label_y_c = 0.85
+    labels_c.append(axc.text(0, label_y_c, "*+(H$^+$+e$^-$)", ha="center", fontsize=8, fontweight="bold"))
+    labels_c.append(axc.text(1, label_y_c, "*H", ha="center", fontsize=8, fontweight="bold"))
     panel_axes(axc, True)
     axc.yaxis.set_label_coords(-0.115, 0.5)  # 与 (b) 的 ylabel 对齐同一 x
     axc.yaxis.set_major_locator(MultipleLocator(0.5))  # 分度值 0.5
