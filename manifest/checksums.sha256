@@ -28,7 +28,7 @@ d299a65b0c25ee816b02f0ca8662cb4234716d77e7c420867edf5d531a347ab8  ./derived/work
 cb0024c4d0514e078fc1433fed0fe13f816841e917f0868df0a53fe771680966  ./fetch/verify_checksums.sh
 f8978cd1cc10cb0268a78802a20eeafd1faea2e4d27f9b4d316bb6d647596950  ./.gitattributes
 1415c5e5831001f5775f524954a74749fc50a681a9c69c5cda6ee12bd56d1d25  ./.gitignore
-5a53b7816bac0cbebf7c87ae002b8e4b0cd163bb297dc28ac06c78e24a0170a4  ./LICENSE
+eef85c795488ad5bb701be40bff7abc95de69a2e3c8d0b4c6ebe5518620d9f32  ./LICENSE
 3fa38c67e6aba7dcb4c03fca66b9b3a2abb52211d9545a8efe9f4019237b3a48  ./manifest/jobs.csv
 a9b29a56be4c0aa8837b030111c5bbf079d4f400159792997f20954f57c7f082  ./manifest/potcar.csv
 351fd4951e33e3075b2465d5cc35dbffb7e703452eb691a1cafb0c5c1deedad6  ./production/ch2oh_choh/0.4V/fine_opt/cal.out
@@ -984,7 +984,7 @@ ef5a9587aa74866c510e0f7b4e783d09009f760b093d80399433c2548ba97fdc  ./production/s
 53c7f9958922b6f779fab52eb747488b29e3a1d1df389b1a8eda052e37b81c97  ./production/slab/0.9V/fine_opt/stdout.gz
 9c689f916951695bb93c0b809c327f68ce4837ed57183096f61f9e8b8ccf79d3  ./production/slab/0.9V/fine_opt/time
 8b7aeffd7fceab3e5387a36162683556e2aa53b0d4a9655b4c5692d104a30d42  ./production/slab/0.9V/fine_opt/vasprun.xml.gz
-a9ec27dc024a3790800043d3a96da7a0349501c3b21fffc56d0cb0fd740f34ad  ./README.md
+23b51661484f4db822e2d0303a52360fdc05b865af0bb8a7b6d53f1b610d815e  ./README.md
 cbf34401f935630a5263a6caad5cab92c39eed145a6281a1244520ed13bbba9a  ./screening/che_eg_oxidation/00_molecules/CH2OHCH2OH/opt/cal.out
 b01005136e216fa5af2190b7d5b901427c546d669ba37c4899bf4623449f4144  ./screening/che_eg_oxidation/00_molecules/CH2OHCH2OH/opt/CONTCAR
 5173e9c83eb1c78f6cfe42b13e7ebf5326e3e0e2326547223cf30df423cc8ef7  ./screening/che_eg_oxidation/00_molecules/CH2OHCH2OH/opt/INCAR

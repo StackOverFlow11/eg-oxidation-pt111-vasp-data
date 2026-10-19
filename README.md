@@ -139,9 +139,8 @@ added). The derived ledger and ladder are also described in
 
 ## License
 
-The non-POTCAR content of this repository (input files, outputs, scripts,
-manifests, and derived tables) is released under the Creative Commons
-Attribution 4.0 International License (CC BY 4.0):
-https://creativecommons.org/licenses/by/4.0/
+The non-POTCAR content of this repository (input files, VASP outputs, scripts,
+manifests, and derived tables) is released under the MIT License. See
+`LICENSE`.
 
 POTCAR files are not included and remain subject to the VASP license.
