@@ -2,7 +2,7 @@
 """plot_fig1.py — GC-CHE 版 Fig 1 三联图（仿 CHE/analysis/ 手稿原版式）。
 
 数据：同目录的 harvest_ladder.csv / harvest_ledger.csv。
-版式：(a) EG_Ox 纯电化学台阶；(b) OER（*OOH 解离作废，*O 直接到 O₂，y 轴分段）；(c) HER。
+版式：(a) EG_Ox 纯电化学台阶；(b) OER（*OOH 解离作废，*O 直接到 ½O₂，2 e 终点）；(c) HER。
 0.0V = CHE 线性外推（Ω 未在 0V 计算，残差 0.03–0.1 eV 量级，见 harvest.py ladder 自检）。
 热化学支路（*CH2OHCOO+*H → *CH2OHCOOH，+0.25/+0.16 eV）与动力学标注（barrier/RDS）
 均不入图；前者数值在 harvest_ladder.csv，后者待恒电势势垒重算。
@@ -13,7 +13,6 @@ import csv
 from pathlib import Path
 
 import matplotlib.pyplot as plt
-from matplotlib.lines import Line2D
 from matplotlib.ticker import MultipleLocator
 
 ROOT = Path(__file__).resolve().parent
@@ -123,13 +122,14 @@ def main():
         eg_y[sp] = series("EG_Ox", sp)
     eg_y["acid2"] = dict(eg_y["_ch2ohcooh"])  # pos7 = 同一态，数值与 pos4 一致
 
-    oer = [("start", "*+2H$_2$O"),
-           ("_OH", "*OH + H$_2$O\n+(H$^+$+e$^-$)"),
-           ("_O", "*O + H$_2$O\n+2(H$^+$+e$^-$)"),
-           ("O2", "O$_2$\n+4(H$^+$+e$^-$)")]
+    oer = [("start", "*+H$_2$O"),
+           ("_OH", "*OH\n+(H$^+$+e$^-$)"),
+           ("_O", "*O\n+2(H$^+$+e$^-$)"),
+           ("O2", "½O$_2$\n+2(H$^+$+e$^-$)")]
+    o2_4e = series("OER", "O2")
     oer_y = {"start": {"0.0V": 0.0, "0.4V": 0.0, "0.9V": 0.0},
              "_OH": series("OER", "_OH"), "_O": series("OER", "_O"),
-             "O2": series("OER", "O2")}
+             "O2": {k: v / 2 for k, v in o2_4e.items()}}
 
     her_y = {"start": {"0.0V": 0.0, "0.4V": 0.0, "0.9V": 0.0}, "_H": series("HER", "_H")}
 
@@ -137,9 +137,7 @@ def main():
     gs = fig.add_gridspec(2, 2, width_ratios=[2.35, 1.0], height_ratios=[1.5, 0.8],
                           wspace=0.16, hspace=0.42, left=0.07, right=0.985, top=0.93, bottom=0.10)
     axa = fig.add_subplot(gs[:, 0])
-    gs_b = gs[0, 1].subgridspec(2, 1, height_ratios=[1.0, 1.6], hspace=0.08)
-    axb_top = fig.add_subplot(gs_b[0])
-    axb = fig.add_subplot(gs_b[1], sharex=axb_top)
+    axb = fig.add_subplot(gs[0, 1])
     axc = fig.add_subplot(gs[1, 1])
 
     # ---- (a) EG_Ox ----
@@ -153,7 +151,7 @@ def main():
     axa.text(6.1, -4.78, "RDS under\nreduction process", ha="center", va="bottom",
              fontsize=8, color="#2E75B6", fontweight="bold", zorder=2)
     labels_a, labels_b, labels_c = [], [], []
-    vals_a, vals_b, vals_b_top, vals_c = [], [], [], []  # (Text, y_rung)，供 R_VAL 统一摆放
+    vals_a, vals_b, vals_c = [], [], []  # (Text, y_rung)，供 R_VAL 统一摆放
     for (label, color, ls, lw) in POT:
         uname = label.split(" ")[0] + "V"
         prev = None
@@ -202,12 +200,9 @@ def main():
     panel_axes(axa, True)
     letter(axa, "(a)")
 
-    # ---- (b) OER（*OOH 解离作废；*O 直接到 O₂；y 轴在 1.65–2.75 eV 断开）----
-    y_break_lo, y_break_hi = 1.65, 2.75
-    axb.set_ylim(-1.05, y_break_lo)
-    axb_top.set_ylim(y_break_hi, 6.10)
-    axb.set_yticks([-1, 0, 1])
-    axb_top.set_yticks([3, 4, 5])
+    # ---- (b) OER（*OOH 解离作废；*O 直接到 ½O₂；2 e 终点）----
+    axb.set_ylim(-1.05, 3.25)
+    axb.set_yticks([-1, 0, 1, 2])
     axb.set_xlim(*xlim_edge(3, 0.30))
     okeys = [k for k, _ in oer]
     for (label, color, ls, lw) in POT:
@@ -215,47 +210,25 @@ def main():
         prev = None
         for i, k in enumerate(okeys):
             y = oer_y[k][uname]
-            for ax in (axb, axb_top):
-                rung(ax, i, y, color, ls, lw, w=0.30)
+            rung(axb, i, y, color, ls, lw, w=0.30)
             if prev is not None:
-                crosses_break = (k == "O2" and prev < y_break_lo and y > y_break_hi)
-                if not crosses_break:
-                    for ax in (axb, axb_top):
-                        conn(ax, i - 1, prev, i, y, color, w=0.30)
+                conn(axb, i - 1, prev, i, y, color, w=0.30)
             prev = y
             if k != "start":
-                target = axb_top if y > y_break_lo else axb
-                if y > 4.5:
-                    # 4.92 eV 标签放在 rung 下方，避开 O₂ 物种标签
-                    t = val(target, i, y, y, color, dy=-0.37, fs=10)
+                if y > 2.3:
+                    # ½O₂ 的 2.46 eV 标签放 rung 下方，避开物种标签
+                    t = val(axb, i, y, y, color, dy=-0.12, fs=10)
                     t.set_va("top")
                 else:
-                    t = val(target, i, y, y, color, dy=0.12, fs=10)
-                    (vals_b_top if target is axb_top else vals_b).append((t, y))
-    vals_b.append((val(axb, 0, 0.0, 0.0, "#000000", dy=0.12, fs=10), 0.0))
+                    vals_b.append((val(axb, i, y, y, color, dy=0.10, fs=10), y))
+    vals_b.append((val(axb, 0, 0.0, 0.0, "#000000", dy=0.10, fs=10), 0.0))
     rung(axb, 0, 0.0, C00, "-", 2.2, w=0.30)  # state[0] 灰色覆盖蓝/红
     for i, (k, lab) in enumerate(oer):
-        labels_b.append(axb_top.text(i, 5.90, lab, ha="center", va="top",
-                                     fontsize=7.0, fontweight="bold", linespacing=1.15))
-    # 断轴：隐藏相邻边框，画折断线
-    axb.spines["top"].set_visible(False)
-    axb_top.spines["bottom"].set_visible(False)
-    axb.tick_params(axis="x", bottom=False, labelbottom=False)
-    axb_top.tick_params(axis="x", bottom=False, labelbottom=False)
-    d = 0.015
-    for ax, y0 in ((axb, 1.0), (axb_top, 0.0)):
-        ax.plot((-d, +d), (y0 - d, y0 + d), transform=ax.transAxes,
-                color="k", clip_on=False, lw=1.3)
-        ax.plot((1 - d, 1 + d), (y0 - d, y0 + d), transform=ax.transAxes,
-                color="k", clip_on=False, lw=1.3)
-    panel_axes(axb, False)
-    for sp in axb_top.spines.values():
-        sp.set_linewidth(1.3)
-    axb_top.set_xticks([])
-    p_lo, p_hi = axb.get_position(), axb_top.get_position()
-    fig.text(p_lo.x0 - 0.032, (p_lo.y0 + p_hi.y1) / 2, "Free Energy (eV)",
-             rotation=90, va="center", ha="center", fontsize=13)
-    letter(axb_top, "(b)")
+        labels_b.append(axb.text(i, 3.05, lab, ha="center", va="top",
+                                 fontsize=7.5, fontweight="bold", linespacing=1.15))
+    panel_axes(axb, True)
+    axb.yaxis.set_label_coords(-0.115, 0.5)
+    letter(axb, "(b)")
     # ---- (c) HER ----
     axc.set_ylim(-0.72, 0.95)
     axc.set_xlim(*xlim_edge(1, 0.18))
@@ -286,7 +259,7 @@ def main():
 
     r_head_ac, r_head_b = 0.005, 0.01
     for ax, labels, r in ((axa, labels_a, r_head_ac),
-                          (axb_top, labels_b, r_head_b),
+                          (axb, labels_b, r_head_b),
                           (axc, labels_c, r_head_ac)):
         ymin, _ = ax.get_ylim()
         t = top_y(ax, labels)
@@ -310,25 +283,11 @@ def main():
         ymin, ymax = ax.get_ylim()
         for t, yr in vals:
             t.set_y(yr + R_VAL * (ymax - ymin))
-    R_VAL_B = 0.004  # 断轴后 (b) 两段各自按轴长取同一视觉偏移
-    for ax, vals in ((axb, vals_b), (axb_top, vals_b_top)):
-        ymin, ymax = ax.get_ylim()
-        for t, yr in vals:
-            t.set_y(yr + R_VAL_B * (ymax - ymin))
+    R_VAL_B = 0.004  # (b) 数值标签偏移
+    ymin, ymax = axb.get_ylim()
+    for t, yr in vals_b:
+        t.set_y(yr + R_VAL_B * (ymax - ymin))
     print(f"数值标签高度比 R_VAL = {R_VAL:.4f}（(a)/(c)），R_VAL_B = {R_VAL_B:.4f}（(b)）")
-
-    # *O→O₂ 跨断轴时用 figure 坐标画一条直线，避免上下段斜率不同造成折线
-    for label, color, ls, lw in POT:
-        uname = label.split(" ")[0] + "V"
-        y0, y1 = oer_y["_O"][uname], oer_y["O2"][uname]
-        if y0 < y_break_lo and y1 > y_break_hi:
-            p0 = fig.transFigure.inverted().transform(
-                axb.transData.transform((2 + 0.30, y0)))
-            p1 = fig.transFigure.inverted().transform(
-                axb_top.transData.transform((3 - 0.30, y1)))
-            fig.add_artist(Line2D([p0[0], p1[0]], [p0[1], p1[1]],
-                                  transform=fig.transFigure, color=color, ls="--",
-                                  lw=0.8, alpha=0.45, zorder=1.5))
 
     out_png = ROOT / "fig1_gc.png"
     out_pdf = ROOT / "fig1_gc.pdf"
