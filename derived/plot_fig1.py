@@ -271,7 +271,7 @@ def main():
     axc.yaxis.set_major_locator(MultipleLocator(0.5))  # 分度值 0.5
     letter(axc, "(c)")
 
-    # 三个子图“顶部留白比”统一（以 (a) 为基准）：(ymax − 物种标签上沿)/(ymax − ymin) = r
+    # 顶部留白比（固定值，三个子图统一）：(ymax − 物种标签上沿)/(ymax − ymin) = r_head
     fig.canvas.draw()
     rend = fig.canvas.get_renderer()
 
@@ -279,13 +279,12 @@ def main():
         inv = ax.transData.inverted()
         return max(inv.transform((0, t.get_window_extent(rend).y1))[1] for t in texts)
 
-    ya0, ya1 = axa.get_ylim()
-    r_head = (ya1 - top_y(axa, labels_a)) / (ya1 - ya0)
-    for ax, labels in ((axb_top, labels_b), (axc, labels_c)):
+    r_head = 0.01  # 固定顶部留白比（用户指定）
+    for ax, labels in ((axa, labels_a), (axb_top, labels_b), (axc, labels_c)):
         ymin, _ = ax.get_ylim()
         t = top_y(ax, labels)
         ax.set_ylim(ymin, (t - r_head * ymin) / (1 - r_head))
-    print(f"顶部留白比 r = {r_head:.4f}（以 (a) 为基准，三子图统一）")
+    print(f"顶部留白比 r_head = {r_head:.4f}（固定值，三子图统一）")
 
     # 三个子图“底部留白比”统一（以 (a) 为基准）：(最低 rung − ymin)/(ymax − ymin) = r
     low = {axa: min(min(d.values()) for d in eg_y.values()),
@@ -304,7 +303,7 @@ def main():
         ymin, ymax = ax.get_ylim()
         for t, yr in vals:
             t.set_y(yr + R_VAL * (ymax - ymin))
-    R_VAL_B = 0.045  # 断轴后 (b) 两段各自按轴长取同一视觉偏移
+    R_VAL_B = 0.004  # 断轴后 (b) 两段各自按轴长取同一视觉偏移
     for ax, vals in ((axb, vals_b), (axb_top, vals_b_top)):
         ymin, ymax = ax.get_ylim()
         for t, yr in vals:
