@@ -7,3 +7,6 @@ AECCAR*
 *.tmp
 __pycache__/
 *.pyc
+
+derived/fig1_gc.png
+derived/fig1_gc.pdf
