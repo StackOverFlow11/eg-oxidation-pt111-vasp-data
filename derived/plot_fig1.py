@@ -13,6 +13,7 @@ import csv
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
 from matplotlib.ticker import MultipleLocator
 
 ROOT = Path(__file__).resolve().parent
@@ -279,12 +280,14 @@ def main():
         inv = ax.transData.inverted()
         return max(inv.transform((0, t.get_window_extent(rend).y1))[1] for t in texts)
 
-    r_head = 0.01  # 固定顶部留白比（用户指定）
-    for ax, labels in ((axa, labels_a), (axb_top, labels_b), (axc, labels_c)):
+    r_head_ac, r_head_b = 0.005, 0.01
+    for ax, labels, r in ((axa, labels_a, r_head_ac),
+                          (axb_top, labels_b, r_head_b),
+                          (axc, labels_c, r_head_ac)):
         ymin, _ = ax.get_ylim()
         t = top_y(ax, labels)
-        ax.set_ylim(ymin, (t - r_head * ymin) / (1 - r_head))
-    print(f"顶部留白比 r_head = {r_head:.4f}（固定值，三子图统一）")
+        ax.set_ylim(ymin, (t - r * ymin) / (1 - r))
+    print(f"顶部留白比 r_head = {r_head_ac:.4f}（(a)/(c)），{r_head_b:.4f}（(b)）")
 
     # 三个子图“底部留白比”统一（以 (a) 为基准）：(最低 rung − ymin)/(ymax − ymin) = r
     low = {axa: min(min(d.values()) for d in eg_y.values()),
@@ -309,6 +312,22 @@ def main():
         for t, yr in vals:
             t.set_y(yr + R_VAL_B * (ymax - ymin))
     print(f"数值标签高度比 R_VAL = {R_VAL:.4f}（(a)/(c)），R_VAL_B = {R_VAL_B:.4f}（(b)）")
+
+    # 断轴处补齐 *O→O₂ 的虚线，避免视觉断裂
+    for label, color, ls, lw in POT:
+        uname = label.split(" ")[0] + "V"
+        y0, y1 = oer_y["_O"][uname], oer_y["O2"][uname]
+        if y0 < y_break_lo and y1 > y_break_hi:
+            x_start, x_end = 2 + 0.30, 3 - 0.30
+            xl = x_start + (x_end - x_start) * (y_break_lo - y0) / (y1 - y0)
+            xh = x_start + (x_end - x_start) * (y_break_hi - y0) / (y1 - y0)
+            p0 = fig.transFigure.inverted().transform(
+                axb.transData.transform((xl, y_break_lo)))
+            p1 = fig.transFigure.inverted().transform(
+                axb_top.transData.transform((xh, y_break_hi)))
+            fig.add_artist(Line2D([p0[0], p1[0]], [p0[1], p1[1]],
+                                  transform=fig.transFigure, color=color, ls="--",
+                                  lw=0.8, alpha=0.45, zorder=1.5))
 
     out_png = ROOT / "fig1_gc.png"
     out_pdf = ROOT / "fig1_gc.pdf"
