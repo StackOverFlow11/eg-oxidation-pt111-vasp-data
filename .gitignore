@@ -1,0 +1,9 @@
+POTCAR
+WAVECAR
+CHGCAR
+CHG
+LOCPOT
+AECCAR*
+*.tmp
+__pycache__/
+*.pyc

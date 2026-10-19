@@ -1,0 +1,12 @@
+Except where otherwise noted, the non-POTCAR content of this repository
+(input files, VASP outputs, scripts, manifests, and derived tables) is
+licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0).
+
+You may obtain a copy of the license at:
+
+    https://creativecommons.org/licenses/by/4.0/
+
+POTCAR files are not included in this repository. They remain subject to the
+VASP license and must be obtained by the user from a licensed VASP
+distribution.
