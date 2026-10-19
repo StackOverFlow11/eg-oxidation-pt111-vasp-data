@@ -1,0 +1,30 @@
+system = fine_opt_absorbent
+
+ISTART = 0
+ICHARG = 2
+INIWAV = 1
+ALGO   = Very Fast
+LPLANE = .TRUE.
+LREAL  = Auto
+ISIF   = 2
+ISYM   = 0
+NELM   = 200
+NELMIN = 4
+IVDW   = 12
+LWAVE  = .FALSE.
+LCHARG = .FALSE.
+ISPIN  = 2
+ENCUT  = 500
+EDIFF  = 1E-05
+NSW    = 1000
+IBRION = 2
+EDIFFG = -0.01
+POTIM  = 0.1
+ISMEAR = 1
+SIGMA  = 0.2
+
+LSOL   = .TRUE.
+ISOL   = 2        # nonlinear+nonlocal (VASPsol++)
+C_MOLAR = 1.0
+R_ION  = 3.0  # 容量优先(实测 3.9e vs 4.0 仅 1.1e)+chem 旧数据一致
+EFERMI_ref = -4.094   # 0.4V vs RHE(pH14); 0.9V 用 -4.594; 公式: -4.52-U+0.826 (PBE锚)
