@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """plot_fig1.py — GC-CHE 版 Fig 1 三联图（仿 CHE/analysis/ 手稿原版式）。
 
-数据：../harvest/harvest_ladder.csv。
+数据：同目录的 harvest_ladder.csv / harvest_ledger.csv。
 版式：(a) EG_Ox 纯电化学台阶；(b) OER（*OOH 解离作废，截断于 *O+2(H⁺+e⁻)）；(c) HER。
 0.0V = CHE 线性外推（Ω 未在 0V 计算，残差 0.03–0.1 eV 量级，见 harvest.py ladder 自检）。
 热化学支路（*CH2OHCOO+*H → *CH2OHCOOH，+0.25/+0.16 eV）与动力学标注（barrier/RDS）
@@ -16,8 +16,8 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator
 
 ROOT = Path(__file__).resolve().parent
-LADDER = ROOT.parent / "harvest" / "harvest_ladder.csv"
-LEDGER = ROOT.parent / "harvest" / "harvest_ledger.csv"
+LADDER = ROOT / "harvest_ladder.csv"
+LEDGER = ROOT / "harvest_ledger.csv"
 
 C04, C09, C00 = "#2E75B6", "#C00000", "#595959"  # 0.4V 蓝 / 0.9V 红 / 0V 灰
 POT = [("0.0 V vs RHE", C00, "-", 2.2),
